@@ -1,15 +1,27 @@
+package main
 import "fmt"
 
-func twoSum(nums []int, target int) []int {
-    fmt.Sprintf("%d %d", nums[0], target)
-
-    for i, num1 := range nums {
-        for j, num2 := range nums {
-            if (num1 + num2 == target && i != j) {
-                return []int{i, j}
-            }
-        }
-    }
-
-    return []int{0, 1}
+func main() {
+  fmt.Printf("%v", twoSum([]int{2, 7, 11, 19}, 9))
+  fmt.Printf("%v", twoSum([]int{3, 2, 4}, 6))
 }
+
+// -- start --
+
+func twoSum(nums []int, target int) []int {
+  m := make(map[int]int)
+
+  for i, num := range nums {
+    complement := target - num
+    _, ok := m[complement]
+    if (ok) {
+      return []int{m[complement], i}
+    }
+    m[num] = i
+  }
+
+  return []int{0, 0}
+}
+
+// -- end --
+
