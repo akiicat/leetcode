@@ -6,21 +6,22 @@ func main() {
   fmt.Printf("%v", twoSum([]int{3, 2, 4}, 6))
 }
 
+// T: O(N)
+// M: O(N)
 // -- start --
 
 func twoSum(nums []int, target int) []int {
   m := make(map[int]int)
 
   for i, num := range nums {
-    complement := target - num
-    _, ok := m[complement]
-    if (ok) {
-      return []int{m[complement], i}
+    compliment, ok := m[target - num]
+    if (ok && compliment != i) {
+      return []int{compliment, i}
     }
     m[num] = i
   }
 
-  return []int{0, 0}
+  return nil
 }
 
 // -- end --
