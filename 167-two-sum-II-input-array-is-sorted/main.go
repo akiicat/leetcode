@@ -7,7 +7,7 @@ func main() {
 }
 
 // T: O(N)
-// M: O(N)
+// M: O(1)
 // -- start --
 
 func twoSum(numbers []int, target int) []int {
