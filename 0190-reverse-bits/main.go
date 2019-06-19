@@ -18,7 +18,7 @@ func reverseBits(num uint32) uint32 {
 
   for i = 32; num != 0; i-- {
     stack = stack << 1 | num & 0x1
-    num = num >> 1
+    num >>= 1
   }
 
   return stack << i
