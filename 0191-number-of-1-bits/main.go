@@ -11,28 +11,27 @@ func main() {
 // -- start --
 
 func hammingWeight(num uint32) int {
-    count := 0;
+  count := 0;
 
-    for i := 0; i < 32; i++ {
-        count += int(num & 0x1)
-        num >>= 1
-    }
+  for ; num != 0; num = num & (num - 1) {
+    count++
+  }
 
-    return count
+  return count
 }
 
 func hammingWeightAlgorithm(num uint32) int {
   count := 0
 
-	for num != 0 {
-		temp := num & (num - 1)
-		if num != temp {
-			count++
-		}
-		num = temp
-	}
+  for num != 0 {
+    temp := num & (num - 1)
+    if num != temp {
+      count++
+    }
+    num = temp
+  }
 
-	return count
+  return count
 }
 
 // -- end --
