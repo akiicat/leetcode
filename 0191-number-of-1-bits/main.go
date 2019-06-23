@@ -1,5 +1,6 @@
 package main
 import "fmt"
+import "math/bits"
 
 func main() {
   fmt.Printf("Input:  %032b\nOutput: %d\n", 11, hammingWeight(11))
@@ -11,6 +12,10 @@ func main() {
 // -- start --
 
 func hammingWeight(num uint32) int {
+    return bits.OnesCount32(num)
+}
+
+func hammingWeightForLoop(num uint32) int {
   count := 0;
 
   for ; num != 0; num = num & (num - 1) {
