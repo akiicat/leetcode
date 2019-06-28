@@ -11,7 +11,7 @@ func main() {
   fmt.Printf("Input:  1122\nOutput: %t\nExpect: false\n", isPalindrome(1122))
 }
 
-// T: O(log(N))
+// T: O(N)
 // M: O(1)
 // -- start --
 
