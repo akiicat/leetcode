@@ -1,6 +1,5 @@
 package main
 import "fmt"
-// import "math/bits"
 
 func main() {
   fmt.Printf("Input:  0\nOutput: %t\nExpect: true\n", isPalindrome(0))
