@@ -2,8 +2,8 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("%v", twoSum([]int{2, 7, 11, 19}, 9))
-  fmt.Printf("%v", twoSum([]int{2, 3, 4}, 6))
+  fmt.Printf("Input:  [2 7 11 19]\nOutput: %v\nExpect: [1 2]\n", twoSum([]int{2, 7, 11, 19}, 9))
+  fmt.Printf("Input:  [2 3 4]\nOutput: %v\nExpect: [1 3]\n", twoSum([]int{2, 3, 4}, 6))
 }
 
 // T: O(N)
