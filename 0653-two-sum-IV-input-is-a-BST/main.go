@@ -20,21 +20,13 @@ func main() {
   t.Left.Right = &TreeNode{Val: 4}
   t.Right.Right = &TreeNode{Val: 7}
 
-  fmt.Printf("%d", findTarget(t, 9))
+  fmt.Printf("Input:  [5, 3, 6, 2, 4, 0, 7]\nOutput: %t\nExpect: true\n" , findTarget(t, 9))
 }
 
 // T: O(N)
 // M: O(N)
 // -- start --
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
 func findTarget(root *TreeNode, k int) bool {
   m := make(map[int]bool)
 
