@@ -3,8 +3,8 @@ import "fmt"
 import "math/bits"
 
 func main() {
-  fmt.Printf("Input:  %032b\nOutput: %d\n", 11, hammingWeight(11))
-  fmt.Printf("Input:  %032b\nOutput: %d\n", 11, hammingWeightAlgorithm(11))
+  fmt.Printf("Input:  %032b\nOutput: %d\nExpect: 3\n", 11, hammingWeight(11))
+  fmt.Printf("Input:  %032b\nOutput: %d\nExpect: 3\n", 11, hammingWeightAlgorithm(11))
 }
 
 // T: O(1) 32 times for every 32bit number no matter how large the number is
