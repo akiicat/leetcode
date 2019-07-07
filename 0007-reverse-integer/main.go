@@ -2,10 +2,10 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Input: 123\nOutput: %d\nExpected: 321\n", reverse(123))
-  fmt.Printf("Input: -123\nOutput: %d\nExpected: -321\n", reverse(-123))
-  fmt.Printf("Input: 120\nOutput: %d\nExpected: 21\n", reverse(120))
-  fmt.Printf("Input: 1534236469\nOutput: %d\nExpected: 0\n", reverse(1534236469))
+  fmt.Printf("Input:  123\nOutput: %d\nExpect: 321\n", reverse(123))
+  fmt.Printf("Input:  -123\nOutput: %d\nExpect: -321\n", reverse(-123))
+  fmt.Printf("Input:  120\nOutput: %d\nExpect: 21\n", reverse(120))
+  fmt.Printf("Input:  1534236469\nOutput: %d\nExpect: 0\n", reverse(1534236469))
 }
 
 // T: O(N)
@@ -19,7 +19,7 @@ func reverse(x int) int {
   }
 
   reverse := 0
-  for (input != 0) {
+  for input != 0 {
     reverse = 10 * reverse + input % 10
     input = input / 10
   }
