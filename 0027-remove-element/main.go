@@ -2,32 +2,34 @@ package main
 import "fmt"
 
 func main() {
-  i, o := []int{1,1,2}, 2
-  fmt.Println("Input:  ", i)
-  fmt.Println("Output: ", i[0:o], removeDuplicates(i))
-  fmt.Println("Expect: ", []int{1,2}, o)
+  i, n, o := []int{3,2,2,3}, 3, 2
+  fmt.Printf("Input:  %v, %d\n", i, n)
+  n = removeElement(i, n)
+  fmt.Printf("Output: %v, %d\n", i[:n], n)
+  fmt.Printf("Expect: %d\n", o)
 
-  i, o = []int{0,0,1,1,1,2,2,3,3,4}, 5
-  fmt.Println("Input:  ", i)
-  fmt.Println("Output: ", i[0:o], removeDuplicates(i))
-  fmt.Println("Expect: ", []int{0,1,2,3,4}, o)
+  i, n, o = []int{0,1,2,2,3,0,4,2}, 2, 5
+  fmt.Printf("Input:  %v, %d\n", i, n)
+  n = removeElement(i, n)
+  fmt.Printf("Output: %v, %d\n", i[:n], n)
+  fmt.Printf("Expect: %d\n", o)
 }
 
 // T: O(N)
 // M: O(1)
 // -- start --
 
-func removeDuplicates(nums []int) int {
+func removeElement(nums []int, val int) int {
   cur := 0
 
-  for _, num := range nums {
-    if nums[cur] != num {
+  for i, num := range nums {
+    if num != val {
+      nums[cur] = nums[i]
       cur++
-      nums[cur] = num
     }
   }
 
-  return cur + 1
+  return cur
 }
 
 // -- end --
