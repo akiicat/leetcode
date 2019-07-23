@@ -2,35 +2,77 @@ package main
 import "fmt"
 
 func main() {
-  i, n, o_n := []int{3,2,2,3}, 3, 2
-  fmt.Printf("Input:  %v, %d\n", i, n)
-  n = removeElement(i, n)
-  fmt.Printf("Output: %v, %d\n", i[:n], n)
-  fmt.Printf("Expect: %d\n", o_n)
+  i, o := [][]int{[]int{1,2,2,1}, []int{2,2}}, []int{2}
+  fmt.Printf("Input:  %v %v\n", i[0], i[1])
+  fmt.Printf("Output: %v\n", intersection(i[0], i[1]))
+  fmt.Printf("Expect: %v\n", o)
 
-  i, n, o_n = []int{0,1,2,2,3,0,4,2}, 2, 5
-  fmt.Printf("Input:  %v, %d\n", i, n)
-  n = removeElement(i, n)
-  fmt.Printf("Output: %v, %d\n", i[:n], n)
-  fmt.Printf("Expect: %d\n", o_n)
+  i, o = [][]int{[]int{4,9,5}, []int{9,4,9,8,4}}, []int{9,4}
+  fmt.Printf("Input:  %v %v\n", i[0], i[1])
+  fmt.Printf("Output: %v\n", intersection(i[0], i[1]))
+  fmt.Printf("Expect: %v\n", o)
 }
 
-// T: O(N)
-// M: O(1)
+// https://leetcode.com/articles/intersection-of-two-arrays/
+// T: O(N + M)
+// M: O(N + M)
 // -- start --
 
-func removeElement(nums []int, val int) int {
-  cur := 0
+// T: O(N + M)
+// M: O(N + M)
+func intersection(nums1 []int, nums2 []int) []int {
 
-  for i, num := range nums {
-    if num != val {
-      nums[cur] = nums[i]
-      cur++
+  var rtn []int
+
+  m := make(map[int]int)
+
+  for _, num := range nums1 {
+    m[num]++
+  }
+
+  for _, num := range nums2 {
+    _, ok := m[num]
+    if ok {
+      rtn = append(rtn, num)
+      delete(m, num)
     }
   }
 
-  return cur
+  return rtn
 }
+
+// T: O(N * M)
+// M: O(N + M)
+func intersectionDoubleArray(nums1 []int, nums2 []int) []int {
+
+  var rtn []int
+
+  for _, num1 := range nums1 {
+    for _, num2 := range nums2 {
+      if num1 != num2 {
+        continue
+      }
+
+      if !contains(rtn, num1) {
+        rtn = append(rtn, num1)
+      }
+
+    }
+  }
+
+  return rtn
+}
+
+// https://stackoverflow.com/questions/10485743/contains-method-for-a-slice
+func contains(s []int, e int) bool {
+  for _, a := range s {
+    if a == e {
+      return true
+    }
+  }
+  return false
+}
+
 
 // -- end --
 
