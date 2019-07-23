@@ -31,9 +31,9 @@ func intersection(nums1 []int, nums2 []int) []int {
   }
 
   for _, num := range nums2 {
-    if _, ok := m[num]; ok {
+    if m[num] > 0 {
       rtn = append(rtn, num)
-      delete(m, num)
+      m[num] = 0
     }
   }
 
