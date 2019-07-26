@@ -28,7 +28,7 @@ func main() {
   fmt.Printf("Expect: %d\n", o)
 }
 
-// T: O(N * M)
+// T: O(N)
 // M: O(1)
 // -- start --
 
