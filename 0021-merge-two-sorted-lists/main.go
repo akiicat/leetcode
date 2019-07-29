@@ -1,38 +1,21 @@
 package main
 import "fmt"
+import . "list_node"
 
-type ListNode struct {
-  Val int
-  Next *ListNode
-}
-
-func (l *ListNode) Display() {
-    list := l
-    for list != nil {
-        fmt.Printf("%+v->", list.Val)
-        list = list.Next
-    }
-    fmt.Printf("NULL")
-}
+// type ListNode struct {
+//   Val int
+//   Next *ListNode
+// }
 
 func main() {
-  i1 := &ListNode{Val: 1}
-  i1.Next = &ListNode{Val: 2}
-  i1.Next.Next = &ListNode{Val: 4}
-
-  i2 := &ListNode{Val: 1}
-  i2.Next = &ListNode{Val: 3}
-  i2.Next.Next = &ListNode{Val: 4}
-
-  fmt.Printf("Input:  ")
-  i1.Display()
-  fmt.Printf(", ")
-  i2.Display()
-  fmt.Println()
-  fmt.Printf("Output: ")
-  mergeTwoLists(i1, i2).Display()
-  fmt.Println()
-  fmt.Printf("Expect: 1->1->2->3->4->4->NULL\n")
+  i := []*ListNode{
+    NewListNode([]int{1,2,4}),
+    NewListNode([]int{1,3,4}),
+  }
+  o := NewListNode([]int{1,1,2,3,4,4})
+  fmt.Printf("Input:  %s, %s\n", i[0].Sprintf(), i[1].Sprintf())
+  fmt.Printf("Output: %s\n", mergeTwoLists(i[0], i[1]).Sprintf())
+  fmt.Printf("Expect: %s\n", o.Sprintf())
 }
 
 // T: O(N) total nodes
