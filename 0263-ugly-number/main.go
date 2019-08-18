@@ -28,12 +28,10 @@ func main() {
   fmt.Printf("Expect: %t\n", o)
 }
 
-// T: O(1)
+// T: O(log(n))
 // M: O(1)
 // -- start --
 
-// T: O(n)
-// M: O(n)
 func isUgly(num int) bool {
   if num < 1 {
     return false
