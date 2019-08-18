@@ -16,7 +16,7 @@ func NewTreeNode(input string) *TreeNode {
 
   arr := strings.Split(input, ",")
 
-  head := make([]TreeNode, 3)
+  head := make([]TreeNode, len(arr))
 
   for i, v := range arr {
     if v == "null" {
