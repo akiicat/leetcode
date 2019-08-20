@@ -19,6 +19,8 @@ func main() {
 // M: O(1)
 // -- start --
 
+// T: O(sqrt(N))
+// M: O(1)
 func isPerfectSquare(num int) bool {
 	i := 1
 	for num > 0 {
@@ -28,6 +30,8 @@ func isPerfectSquare(num int) bool {
 	return num == 0
 }
 
+// T: O(log(N))
+// M: O(1)
 func isPerfectSquareMath(num int) bool {
   sqrt := math.Sqrt(float64(num))
   return sqrt == float64(int(sqrt))

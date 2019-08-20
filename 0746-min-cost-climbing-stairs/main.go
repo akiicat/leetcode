@@ -13,6 +13,7 @@ func main() {
   fmt.Printf("Expect: %d\n", o)
 }
 
+// https://leetcode.com/articles/min-cost-climbing-stairs/
 // T: O(n)
 // M: O(1)
 // -- start --

@@ -18,13 +18,12 @@ func main() {
   fmt.Printf("Expect: %v\n", o)
 }
 
-// https://leetcode.com/articles/pascals-triangle/
-// T: O(n ** 2) n for numRows
+// T: O(n ** 2)
 // M: O(n)
 // -- start --
 
 // Dynamic Programming
-// T: O(n ** 2) n for numRows
+// T: O(n ** 2)
 // M: O(n)
 func getRow(rowIndex int) []int {
   tri := make([]int, rowIndex + 1)
