@@ -49,6 +49,10 @@ func (root *TreeNode) Printf() {
 
 // BFS
 func (root *TreeNode) Sprintf() string {
+  if root == nil {
+    return ""
+  }
+
   var s strings.Builder
   var buf strings.Builder
 
