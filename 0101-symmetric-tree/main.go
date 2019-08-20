@@ -36,7 +36,7 @@ func main() {
 }
 
 // T: O(n)
-// M: O(n)
+// M: O(h)
 // -- start --
 
 func isSymmetric(root *TreeNode) bool {
