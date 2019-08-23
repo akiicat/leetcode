@@ -14,33 +14,40 @@ func NewTreeNode(input string) *TreeNode {
     return nil
   }
 
-  arr := strings.Split(input, ",")
+  strs := strings.Split(input, ",")
 
-  head := make([]TreeNode, len(arr))
+  size := 0
+  for _, v := range strs {
+    if v != "null" {
+      size++
+    }
+  }
 
-  for i, v := range arr {
+  nodes := make([]TreeNode, size)
+
+  cur := &nodes[0]
+  cur.Val, _ = strconv.Atoi(strs[0])
+
+  queue, par := []**TreeNode{&cur.Left, &cur.Right}, &cur
+
+  next := 1
+  for _, v := range strs[1:] {
+    queue, par = queue[1:], queue[0]
+
     if v == "null" {
       continue
     }
 
-    cur := &head[i]
+    cur = &nodes[next]
     cur.Val, _ = strconv.Atoi(v)
 
-    if i == 0 {
-      continue
-    }
+    *par = cur
 
-    par := &head[(i-1)/2]
-    isLeft := i % 2 == 1
-
-    if isLeft {
-      par.Left = cur
-    } else {
-      par.Right = cur
-    }
+    queue = append(queue, &cur.Left, &cur.Right)
+    next++
   }
 
-  return &head[0]
+  return &nodes[0]
 }
 
 func (root *TreeNode) Printf() {
