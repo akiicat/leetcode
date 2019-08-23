@@ -25,7 +25,7 @@ func main() {
   fmt.Printf("Output: %v\n", binaryTreePaths(i))
   fmt.Printf("Expect: %v\n", o)
 
-  i, o = NewTreeNode("1,2,2,3,null,null,3,4,null,null,4"), []string{"1->2->3->4","1->2->3"}
+  i, o = NewTreeNode("1,2,2,3,null,null,3,4,null,null,4"), []string{"1->2->3->4","1->2->3->4"}
   fmt.Printf("Input:  %s\n", i.Sprintf())
   fmt.Printf("Output: %v\n", binaryTreePaths(i))
   fmt.Printf("Expect: %v\n", o)
