@@ -24,15 +24,6 @@ func NewListNode(nums []int) *ListNode {
   return &head[0]
 }
 
-func (l *ListNode) Printf() {
-  list := l
-  for list != nil {
-    fmt.Printf("%+v->", list.Val)
-    list = list.Next
-  }
-  fmt.Printf("NULL")
-}
-
 func (l *ListNode) ToStr() string {
   var s strings.Builder
   list := l

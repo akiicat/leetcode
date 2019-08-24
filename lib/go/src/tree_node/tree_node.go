@@ -50,10 +50,6 @@ func NewTreeNode(input string) *TreeNode {
   return &nodes[0]
 }
 
-func (root *TreeNode) Printf() {
-  fmt.Printf("%s", root.ToStr())
-}
-
 // BFS
 func (root *TreeNode) ToStr() string {
   if root == nil {
