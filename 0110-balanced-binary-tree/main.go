@@ -10,22 +10,22 @@ import . "tree_node"
 
 func main() {
   i, o := NewTreeNode("3,9,20,null,null,15,7"), true
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %t\n", isBalanced(i))
   fmt.Printf("Expect: %t\n", o)
 
   i, o = NewTreeNode("1,2,2,3,3,null,null,4,4"), false
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %t\n", isBalanced(i))
   fmt.Printf("Expect: %t\n", o)
 
   i, o = NewTreeNode("1,2,2,3,null,null,3,4,null,null,4"), false
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %t\n", isBalanced(i))
   fmt.Printf("Expect: %t\n", o)
 
   i, o = NewTreeNode(""), true
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %t\n", isBalanced(i))
   fmt.Printf("Expect: %t\n", o)
 }

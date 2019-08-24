@@ -9,24 +9,24 @@ import . "list_node"
 
 func main() {
   i, o := NewListNode([]int{1,1,2}), NewListNode([]int{1,2})
-  fmt.Printf("Input:  %s\n", i.Sprintf())
-  fmt.Printf("Output: %s\n", deleteDuplicates(i).Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
+  fmt.Printf("Output: %s\n", deleteDuplicates(i).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 
   i, o = NewListNode([]int{1,1,2,3,3}), NewListNode([]int{1,2,3})
-  fmt.Printf("Input:  %s\n", i.Sprintf())
-  fmt.Printf("Output: %s\n", deleteDuplicates(i).Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
+  fmt.Printf("Output: %s\n", deleteDuplicates(i).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 
   i, o = NewListNode([]int{1,1,1}), NewListNode([]int{1})
-  fmt.Printf("Input:  %s\n", i.Sprintf())
-  fmt.Printf("Output: %s\n", deleteDuplicates(i).Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
+  fmt.Printf("Output: %s\n", deleteDuplicates(i).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 
   i, o = NewListNode([]int{}), NewListNode([]int{})
-  fmt.Printf("Input:  %s\n", i.Sprintf())
-  fmt.Printf("Output: %s\n", deleteDuplicates(i).Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
+  fmt.Printf("Output: %s\n", deleteDuplicates(i).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 }
 
 // leetcode 26.

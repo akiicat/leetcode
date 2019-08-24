@@ -33,7 +33,7 @@ func (l *ListNode) Printf() {
   fmt.Printf("NULL")
 }
 
-func (l *ListNode) Sprintf() string {
+func (l *ListNode) ToStr() string {
   var s strings.Builder
   list := l
   for list != nil {

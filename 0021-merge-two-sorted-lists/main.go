@@ -13,9 +13,9 @@ func main() {
     NewListNode([]int{1,3,4}),
   }
   o := NewListNode([]int{1,1,2,3,4,4})
-  fmt.Printf("Input:  %s, %s\n", i[0].Sprintf(), i[1].Sprintf())
-  fmt.Printf("Output: %s\n", mergeTwoLists(i[0], i[1]).Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Input:  %s, %s\n", i[0].ToStr(), i[1].ToStr())
+  fmt.Printf("Output: %s\n", mergeTwoLists(i[0], i[1]).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 }
 
 // T: O(N) total nodes

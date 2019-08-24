@@ -10,7 +10,7 @@ import . "tree_node"
 
 func main() {
   i, o := NewTreeNode("3,9,20,null,null,15,7"), 3
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %d\n", maxDepth(i))
   fmt.Printf("Expect: %d\n", o)
 }

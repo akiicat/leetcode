@@ -10,37 +10,37 @@ import . "tree_node"
 
 func main() {
   i, o := NewTreeNode("1,2,3,null,5"), 2
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %d\n", minDepth(i))
   fmt.Printf("Expect: %d\n", o)
 
   i, o = NewTreeNode("3,9,20,null,null,15,7"), 2
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %d\n", minDepth(i))
   fmt.Printf("Expect: %d\n", o)
 
   i, o = NewTreeNode("1,2,2,3,3,null,null,4,4"), 2
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %d\n", minDepth(i))
   fmt.Printf("Expect: %d\n", o)
 
   i, o = NewTreeNode("1,2,2,3,null,null,3,4,null,null,4"), 4
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %d\n", minDepth(i))
   fmt.Printf("Expect: %d\n", o)
 
   i, o = NewTreeNode("1,2"), 2
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %d\n", minDepth(i))
   fmt.Printf("Expect: %d\n", o)
 
   i, o = NewTreeNode("1"), 1
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %d\n", minDepth(i))
   fmt.Printf("Expect: %d\n", o)
 
   i, o = NewTreeNode(""), 0
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %d\n", minDepth(i))
   fmt.Printf("Expect: %d\n", o)
 }

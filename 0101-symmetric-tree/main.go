@@ -15,7 +15,7 @@ func main() {
   //  / \ / \
   // 3  4 4  3
   i, o := NewTreeNode("1,2,2,3,4,4,3"), true
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %t\n", isSymmetric(i))
   fmt.Printf("Expect: %t\n", o)
 
@@ -25,12 +25,12 @@ func main() {
   //  \   \
   //  3    3
   i, o = NewTreeNode("1,2,2,null,3,null,3"), false
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %t\n", isSymmetric(i))
   fmt.Printf("Expect: %t\n", o)
 
   i, o = NewTreeNode(""), true
-  fmt.Printf("Input:  %s\n", i.Sprintf())
+  fmt.Printf("Input:  %s\n", i.ToStr())
   fmt.Printf("Output: %t\n", isSymmetric(i))
   fmt.Printf("Expect: %t\n", o)
 }

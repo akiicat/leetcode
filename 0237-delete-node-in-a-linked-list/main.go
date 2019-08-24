@@ -9,16 +9,16 @@ import . "list_node"
 
 func main() {
   i, n, o := NewListNode([]int{4,5,1,9}), 5, NewListNode([]int{4,1,9})
-  fmt.Printf("Input:  %s, %d\n", i.Sprintf(), n)
+  fmt.Printf("Input:  %s, %d\n", i.ToStr(), n)
   deleteNode(i.Next)
-  fmt.Printf("Output: %s\n", i.Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Output: %s\n", i.ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 
   i, n, o = NewListNode([]int{4,5,1,9}), 1, NewListNode([]int{4,5,9})
-  fmt.Printf("Input:  %s, %d\n", i.Sprintf(), n)
+  fmt.Printf("Input:  %s, %d\n", i.ToStr(), n)
   deleteNode(i.Next.Next)
-  fmt.Printf("Output: %s\n", i.Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Output: %s\n", i.ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 }
 
 // T: O(1)

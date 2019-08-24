@@ -9,19 +9,19 @@ import . "list_node"
 
 func main() {
   i, n, o := NewListNode([]int{1,2,6,3,4,5,6}), 6, NewListNode([]int{1,2,3,4,5})
-  fmt.Printf("Input:  %s, %d\n", i.Sprintf(), n)
-  fmt.Printf("Output: %s\n", removeElements(i, n).Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Input:  %s, %d\n", i.ToStr(), n)
+  fmt.Printf("Output: %s\n", removeElements(i, n).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 
   i, n, o = NewListNode([]int{1}), 1, NewListNode([]int{})
-  fmt.Printf("Input:  %s, %d\n", i.Sprintf(), n)
-  fmt.Printf("Output: %s\n", removeElements(i, n).Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Input:  %s, %d\n", i.ToStr(), n)
+  fmt.Printf("Output: %s\n", removeElements(i, n).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 
   i, n, o = NewListNode([]int{1, 1}), 1, NewListNode([]int{})
-  fmt.Printf("Input:  %s, %d\n", i.Sprintf(), n)
-  fmt.Printf("Output: %s\n", removeElements(i, n).Sprintf())
-  fmt.Printf("Expect: %s\n", o.Sprintf())
+  fmt.Printf("Input:  %s, %d\n", i.ToStr(), n)
+  fmt.Printf("Output: %s\n", removeElements(i, n).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 }
 
 // T: O(N)
