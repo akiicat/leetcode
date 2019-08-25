@@ -11,8 +11,8 @@ import . "tree_node"
 func main() {
   i, o := []int{-10,-3,0,5,9}, NewTreeNode("0,-3,9,-10,null,5")
   fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", sortedArrayToBST(i).ToStr())
-  fmt.Printf("Expect: %v\n", o.ToStr())
+  fmt.Printf("Output: %s\n", sortedArrayToBST(i).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 }
 
 // T: O(n)
