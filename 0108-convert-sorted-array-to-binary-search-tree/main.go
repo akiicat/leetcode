@@ -16,7 +16,7 @@ func main() {
 }
 
 // T: O(n)
-// M: O(n)
+// M: O(log(n))
 // -- start --
 
 func sortedArrayToBST(nums []int) *TreeNode {
