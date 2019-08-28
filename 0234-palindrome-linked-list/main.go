@@ -1,31 +1,32 @@
 package main
 import "fmt"
+import . "list_node"
 
-type ListNode struct {
-  Val int
-  Next *ListNode
-}
+// type ListNode struct {
+//   Val int
+//   Next *ListNode
+// }
 
 func main() {
-  t1 := &ListNode{Val: 1}
-  t1.Next = &ListNode{Val: 2}
-  fmt.Printf("Input:  1->2\nOutput: %t\nExpect: false\n", isPalindrome(t1))
+  i, o := NewListNode([]int{1,2}), false
+  fmt.Printf("Input:  %s\n", i.ToStr())
+  fmt.Printf("Output: %t\n", isPalindrome(i))
+  fmt.Printf("Expect: %t\n", o)
 
-  t2 := &ListNode{Val: 1}
-  t2.Next = &ListNode{Val: 2}
-  t2.Next.Next = &ListNode{Val: 2}
-  t2.Next.Next.Next = &ListNode{Val: 1}
-  fmt.Printf("Input:  1->2->2->1\nOutput: %t\nExpect: true\n", isPalindrome(t2))
+  i, o = NewListNode([]int{1,2,2,1}), true
+  fmt.Printf("Input:  %s\n", i.ToStr())
+  fmt.Printf("Output: %t\n", isPalindrome(i))
+  fmt.Printf("Expect: %t\n", o)
 
-  t3 := &ListNode{Val: 1}
-  t3.Next = &ListNode{Val: 2}
-  t3.Next.Next = &ListNode{Val: 1}
-  fmt.Printf("Input:  1->2->1\nOutput: %t\nExpect: true\n", isPalindrome(t3))
+  i, o = NewListNode([]int{1,2,1}), true
+  fmt.Printf("Input:  %s\n", i.ToStr())
+  fmt.Printf("Output: %t\n", isPalindrome(i))
+  fmt.Printf("Expect: %t\n", o)
 
-  t4 := &ListNode{Val: 1}
-  t4.Next = &ListNode{Val: 0}
-  t4.Next.Next = &ListNode{Val: 0}
-  fmt.Printf("Input:  1->0->0\nOutput: %t\nExpect: false\n", isPalindrome(t4))
+  i, o = NewListNode([]int{1,0,0}), false
+  fmt.Printf("Input:  %s\n", i.ToStr())
+  fmt.Printf("Output: %t\n", isPalindrome(i))
+  fmt.Printf("Expect: %t\n", o)
 }
 
 // T: O(N)

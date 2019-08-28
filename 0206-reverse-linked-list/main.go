@@ -1,36 +1,20 @@
 package main
 import "fmt"
+import . "list_node"
 
-type ListNode struct {
-  Val int
-  Next *ListNode
-}
-
-func (l *ListNode) Display() {
-    list := l
-    for list != nil {
-        fmt.Printf("%+v->", list.Val)
-        list = list.Next
-    }
-    fmt.Printf("NULL")
-    fmt.Println()
-}
+// type ListNode struct {
+//   Val int
+//   Next *ListNode
+// }
 
 func main() {
-  t := &ListNode{Val: 1}
-  t.Next = &ListNode{Val: 2}
-  t.Next.Next = &ListNode{Val: 3}
-  t.Next.Next.Next = &ListNode{Val: 4}
-  t.Next.Next.Next.Next = &ListNode{Val: 5}
-  fmt.Printf("Input:  ")
-  t.Display()
-  fmt.Printf("Output: ")
-  reverseList(t).Display()
-  fmt.Printf("Expect: 5->4->3->2->1->NULL\n")
-
+  i, o := NewListNode([]int{1,2,3,4,5}), NewListNode([]int{5,4,3,2,1})
+  fmt.Printf("Input:  %s\n", i.ToStr())
+  fmt.Printf("Output: %s\n", reverseList(i).ToStr())
+  fmt.Printf("Expect: %s\n", o.ToStr())
 }
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 // -- start --
 
