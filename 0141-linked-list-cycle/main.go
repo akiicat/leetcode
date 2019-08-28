@@ -10,20 +10,20 @@ import . "list_node"
 func main() {
   i, pos, o := NewListNode([]int{3,2,0,-4}), 1, true
   fmt.Printf("Input:  %s, %d\n", i.ToStr(), pos)
-  AddPos(i.Next, pos)
-  fmt.Printf("Output: %t\n", hasCycle(i.Next))
+  AddPos(i, pos)
+  fmt.Printf("Output: %t\n", hasCycle(i))
   fmt.Printf("Expect: %t\n", o)
 
   i, pos, o = NewListNode([]int{1,2}), 0, true
   fmt.Printf("Input:  %s, %d\n", i.ToStr(), pos)
-  AddPos(i.Next, pos)
-  fmt.Printf("Output: %t\n", hasCycle(i.Next))
+  AddPos(i, pos)
+  fmt.Printf("Output: %t\n", hasCycle(i))
   fmt.Printf("Expect: %t\n", o)
 
   i, pos, o = NewListNode([]int{1,2}), -1, false
   fmt.Printf("Input:  %s, %d\n", i.ToStr(), pos)
-  AddPos(i.Next, pos)
-  fmt.Printf("Output: %t\n", hasCycle(i.Next))
+  AddPos(i, pos)
+  fmt.Printf("Output: %t\n", hasCycle(i))
   fmt.Printf("Expect: %t\n", o)
 }
 
