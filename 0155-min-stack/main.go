@@ -63,10 +63,10 @@ func Constructor() MinStack {
 
 
 func (this *MinStack) Push(x int)  {
-  this.arr = append([]int{x}, this.arr...)
+  this.arr = append(this.arr, x)
 
-  if len(this.min) == 0 || x <= this.min[0] {
-    this.min = append([]int{x}, this.min...)
+  if len(this.min) == 0 || x <= this.min[len(this.min)-1] {
+    this.min = append(this.min, x)
   }
 }
 
@@ -76,11 +76,11 @@ func (this *MinStack) Pop()  {
     return
   }
 
-  if this.arr[0] == this.min[0] {
-    this.min = this.min[1:]
+  if this.arr[len(this.arr)-1] == this.min[len(this.min)-1] {
+    this.min = this.min[:len(this.min)-1]
   }
 
-  this.arr = this.arr[1:]
+  this.arr = this.arr[:len(this.arr)-1]
 }
 
 
@@ -89,7 +89,7 @@ func (this *MinStack) Top() int {
     return 0
   }
 
-  return this.arr[0]
+  return this.arr[len(this.arr)-1]
 }
 
 
@@ -98,7 +98,7 @@ func (this *MinStack) GetMin() int {
     return 0
   }
 
-  return this.min[0]
+  return this.min[len(this.min)-1]
 }
 
 // -- end --
