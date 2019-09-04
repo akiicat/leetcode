@@ -46,15 +46,5 @@ func titleToNumber(s string) int {
   return n
 }
 
-func convertToTitle(n int) string {
-  s := ""
-
-  for n = n - 1; n >= 0; n = n / 26 - 1 {
-    s = string(n % 26 + 65) + s
-  }
-
-  return s
-}
-
 // -- end --
 
