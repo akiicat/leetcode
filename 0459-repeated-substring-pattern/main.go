@@ -55,6 +55,11 @@ func main() {
 // -- start --
 
 func repeatedSubstringPattern(s string) bool {
+	ss := (s + s)[1:len(s)*2-1] // shift one
+	return strings.Contains(ss, s)
+}
+
+func repeatedSubstringPatternRepeat(s string) bool {
 	n := len(s)
 
   upperBound := int(math.Sqrt((float64(n)))) + 1
@@ -73,8 +78,8 @@ func repeatedSubstringPattern(s string) bool {
 }
 
 func repeat(s string, p, q int) bool {
-  return repeat1(s, p, q) || repeat1(s, q, p)
-  // return repeat2(s, p, q) || repeat2(s, q, p)
+  // return repeat1(s, p, q) || repeat1(s, q, p)
+  return repeat2(s, p, q) || repeat2(s, q, p)
 }
 
 func repeat1(s string, p, q int) bool {
