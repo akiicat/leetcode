@@ -16,6 +16,7 @@
 # +---------+
 # Note: All emails are in lowercase.
 
+# leetcode 196.
 # Write your MySQL query statement below
 SELECT Email
 FROM Person
