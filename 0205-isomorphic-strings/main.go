@@ -23,6 +23,7 @@ func main() {
   fmt.Printf("Expect: %t\n", o)
 }
 
+// leetcode 290.
 // T: O(n)
 // M: O(1) not exceed 26 chars
 // -- start --
@@ -33,16 +34,16 @@ func isIsomorphic(s string, t string) bool {
 
   for i := 0; i < len(s); i++ {
     v1, ok1 := m1[s[i]]
+    v2, ok2 := m2[t[i]]
+
     if !ok1 {
       m1[s[i]] = t[i]
-    } else if v1 != t[i] {
-      return false
     }
-
-    v2, ok2 := m2[t[i]]
     if !ok2 {
       m2[t[i]] = s[i]
-    } else if v2 != s[i] {
+    }
+
+    if ok1 && v1 != t[i] || ok2 && v2 != s[i] {
       return false
     }
   }
