@@ -31,7 +31,7 @@ func main() {
 
 // leetcode 205.
 // T: O(n)
-// M: O(n)
+// M: O(c) c for len(pattern)
 // -- start --
 
 func wordPattern(pattern string, str string) bool {
