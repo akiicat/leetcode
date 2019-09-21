@@ -46,6 +46,7 @@ func run(intrs []string, values [][]int) []string {
   return rtn
 }
 
+// leetcode 225. 232.
 // T: O(n)
 // M: O(1)
 // -- start --
