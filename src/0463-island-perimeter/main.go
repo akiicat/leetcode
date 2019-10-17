@@ -13,10 +13,12 @@ func main() {
   fmt.Printf("Expect: %d\n", o)
 }
 
-// T: O(n*log(n)) for sort
+// T: O(m*n)
 // M: O(1)
 // -- start --
 
+// T: O(m*n)
+// M: O(1)
 func islandPerimeter(grid [][]int) int {
   sum := 0
   h, w := len(grid), len(grid[0])
@@ -51,6 +53,8 @@ func islandPerimeter(grid [][]int) int {
   return sum
 }
 
+// T: O(m*n)
+// M: O(1)
 func islandPerimeterRemove(grid [][]int) int {
   c, sum := 0, 0
   for i, row := range grid {
