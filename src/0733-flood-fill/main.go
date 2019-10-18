@@ -25,34 +25,34 @@ func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
     return image
   }
 
-  stack := []int{sr, sc}
+  queue := []int{sr, sc}
 
   lr, lc := len(image), len(image[0])
 
-  for len(stack) != 0 {
-    r, c := stack[0], stack[1]
-    stack = stack[2:]
+  for len(queue) != 0 {
+    r, c := queue[0], queue[1]
+    queue = queue[2:]
 
     image[r][c] = newColor
 
     // up
     if r != 0 && image[r-1][c] == oldColor {
-      stack = append(stack, r-1, c)
+      queue = append(queue, r-1, c)
     }
 
     // down
     if r != lr-1 && image[r+1][c] == oldColor {
-      stack = append(stack, r+1, c)
+      queue = append(queue, r+1, c)
     }
 
     // left
     if c != 0 && image[r][c-1] == oldColor {
-      stack = append(stack, r, c-1)
+      queue = append(queue, r, c-1)
     }
 
     // right
     if c != lc-1 && image[r][c+1] == oldColor {
-      stack = append(stack, r, c+1)
+      queue = append(queue, r, c+1)
     }
   }
 
