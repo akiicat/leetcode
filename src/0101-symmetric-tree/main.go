@@ -1,6 +1,6 @@
 package main
 import "fmt"
-import . "tree_node"
+import . "main/pkg/tree_node"
 
 // type TreeNode struct {
 //     Val int

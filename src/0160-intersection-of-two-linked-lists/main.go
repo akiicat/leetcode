@@ -1,6 +1,6 @@
 package main
 import "fmt"
-import . "list_node"
+import . "main/pkg/list_node"
 
 // type ListNode struct {
 //   Val int
