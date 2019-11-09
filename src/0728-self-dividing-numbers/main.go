@@ -9,7 +9,7 @@ func main() {
 }
 
 // T: O(n) n is the number of integers in the range
-// M: O(n) answer
+// M: O(1)
 // -- start --
 
 func selfDividingNumbers(left int, right int) []int {
