@@ -1,5 +1,6 @@
 package main
 import "fmt"
+import "strings"
 
 func main() {
   i, o := "PPALLP", true
@@ -45,6 +46,10 @@ func checkRecord(s string) bool {
   }
 
   return true
+}
+
+func checkRecordStrings(s string) bool {
+	return !strings.Contains(s,"LLL") && strings.Count(s,"A") <= 1
 }
 
 // -- end --
