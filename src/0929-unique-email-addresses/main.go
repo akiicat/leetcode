@@ -28,26 +28,21 @@ func numUniqueEmails(emails []string) int {
 
 func uniq(email string) string {
   s := []byte{}
-  i := 0
-  t := true
+  ignored := false
 
-  for i < len(email) {
-    b := email[i]
+  for i, b := range email {
     if b == '@' {
       s = append(s, []byte(email[i:])...)
       break
     }
-    if b == '+' {
-      t = false
-    }
-    if b == '.' {
-      i++
+    if ignored || b == '.' {
       continue
     }
-    if t {
-      s = append(s, b)
+    if b == '+' {
+      ignored = true
+      continue
     }
-    i++
+    s = append(s, byte(b))
   }
   return string(s)
 }
