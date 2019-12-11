@@ -10,7 +10,7 @@ func main() {
   fmt.Printf("Expect: %v\n", o)
 }
 
-// leetcode 414.
+// leetcode 414. 628.
 // T: O(n * log(n))
 // M: O(n)
 // -- start --

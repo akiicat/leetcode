@@ -38,7 +38,7 @@ func main() {
   fmt.Printf("Expect: %d\n", o)
 }
 
-// leetcode 506.
+// leetcode 506. 628.
 // T: O(n)
 // M: O(1)
 // -- start --
