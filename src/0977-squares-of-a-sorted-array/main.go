@@ -3,18 +3,18 @@ import "fmt"
 
 func main() {
   i, o := []int{-4,-1,0,3,10}, []int{0,1,9,16,100}
-  fmt.Println("Input:  ", i)
-  fmt.Println("Output: ", sortedSquares(i))
-  fmt.Println("Expect: ", o)
+  fmt.Printf("Input:  %v\n", i)
+  fmt.Printf("Output: %v\n", sortedSquares(i))
+  fmt.Printf("Expect: %v\n", o)
 
   i, o = []int{-7,-3,2,3,11}, []int{4,9,9,49,121}
-  fmt.Println("Input:  ", i)
-  fmt.Println("Output: ", sortedSquares(i))
-  fmt.Println("Expect: ", o)
+  fmt.Printf("Input:  %v\n", i)
+  fmt.Printf("Output: %v\n", sortedSquares(i))
+  fmt.Printf("Expect: %v\n", o)
 }
 
-// T: O(N)
-// M: O(N)
+// T: O(n)
+// M: O(n)
 // -- start --
 
 func sortedSquares(A []int) []int {
