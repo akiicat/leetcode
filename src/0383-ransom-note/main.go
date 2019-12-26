@@ -2,32 +2,38 @@ package main
 import "fmt"
 
 func main() {
-  i, o := []string{"a", "b"}, false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\nExpect: %t\n", canConstruct(i[0], i[1]), o)
+  r, m, o := "a", "b", false
+  fmt.Printf("Input:  %s, %s\n", r, m)
+  fmt.Printf("Output: %t\n", canConstruct(r, m))
+  fmt.Printf("Expect: %t\n", o)
 
-  i, o = []string{"aa", "ab"}, false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\nExpect: %t\n", canConstruct(i[0], i[1]), o)
+  r, m, o = "aa", "ab", false
+  fmt.Printf("Input:  %s, %s\n", r, m)
+  fmt.Printf("Output: %t\n", canConstruct(r, m))
+  fmt.Printf("Expect: %t\n", o)
 
-  i, o = []string{"aa", "aab"}, true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\nExpect: %t\n", canConstruct(i[0], i[1]), o)
+  r, m, o = "aa", "aab", true
+  fmt.Printf("Input:  %s, %s\n", r, m)
+  fmt.Printf("Output: %t\n", canConstruct(r, m))
+  fmt.Printf("Expect: %t\n", o)
 
-  i, o = []string{"aab", "aa"}, false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\nExpect: %t\n", canConstruct(i[0], i[1]), o)
+  r, m, o = "aab", "aa", false
+  fmt.Printf("Input:  %s, %s\n", r, m)
+  fmt.Printf("Output: %t\n", canConstruct(r, m))
+  fmt.Printf("Expect: %t\n", o)
 
-  i, o = []string{"bg", "abge"}, true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\nExpect: %t\n", canConstruct(i[0], i[1]), o)
+  r, m, o = "bg", "abge", true
+  fmt.Printf("Input:  %s, %s\n", r, m)
+  fmt.Printf("Output: %t\n", canConstruct(r, m))
+  fmt.Printf("Expect: %t\n", o)
 
-  i, o = []string{"", ""}, true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\nExpect: %t\n", canConstruct(i[0], i[1]), o)
+  r, m, o = "", "", true
+  fmt.Printf("Input:  %s, %s\n", r, m)
+  fmt.Printf("Output: %t\n", canConstruct(r, m))
+  fmt.Printf("Expect: %t\n", o)
 }
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 // -- start --
 

@@ -3,15 +3,34 @@ import "fmt"
 import "bytes"
 
 func main() {
-  fmt.Printf("Input:  1\nOutput: %s\nExpect: 1\n", countAndSay(1))
-  fmt.Printf("Input:  2\nOutput: %s\nExpect: 11\n", countAndSay(2))
-  fmt.Printf("Input:  3\nOutput: %s\nExpect: 21\n", countAndSay(3))
-  fmt.Printf("Input:  4\nOutput: %s\nExpect: 1211\n", countAndSay(4))
-  fmt.Printf("Input:  5\nOutput: %s\nExpect: 111221\n", countAndSay(5))
+  i, o := 1, "1"
+  fmt.Printf("Input:  %d\n", i)
+  fmt.Printf("Output: %s\n", countAndSay(i))
+  fmt.Printf("Expect: %s\n", o)
+
+  i, o = 2, "11"
+  fmt.Printf("Input:  %d\n", i)
+  fmt.Printf("Output: %s\n", countAndSay(i))
+  fmt.Printf("Expect: %s\n", o)
+
+  i, o = 3, "21"
+  fmt.Printf("Input:  %d\n", i)
+  fmt.Printf("Output: %s\n", countAndSay(i))
+  fmt.Printf("Expect: %s\n", o)
+
+  i, o = 4, "1211"
+  fmt.Printf("Input:  %d\n", i)
+  fmt.Printf("Output: %s\n", countAndSay(i))
+  fmt.Printf("Expect: %s\n", o)
+
+  i, o = 5, "111221"
+  fmt.Printf("Input:  %d\n", i)
+  fmt.Printf("Output: %s\n", countAndSay(i))
+  fmt.Printf("Expect: %s\n", o)
 }
 
-// T: O(2^N)
-// M: O(N)
+// T: O(2^n)
+// M: O(n)
 // -- start --
 
 var initialize = false

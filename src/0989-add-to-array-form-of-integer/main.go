@@ -2,30 +2,34 @@ package main
 import "fmt"
 
 func main() {
-  a, k, o := []int{1, 2, 0, 0}, 34, []int{1, 2, 3, 4}
+  a, k, o := []int{1,2,0,0}, 34, []int{1,2,3,4}
   fmt.Printf("Input:  %v, %d\n", a, k)
-  fmt.Printf("Output: %v\nExpect: %v\n", addToArrayForm(a, k), o)
+  fmt.Printf("Output: %v\n", addToArrayForm(a, k))
+  fmt.Printf("Expect: %v\n", o)
 
-  a, k, o = []int{2, 7, 4}, 181, []int{4, 5, 5}
+  a, k, o = []int{2,7,4}, 181, []int{4,5,5}
   fmt.Printf("Input:  %v, %d\n", a, k)
-  fmt.Printf("Output: %v\nExpect: %v\n", addToArrayForm(a, k), o)
+  fmt.Printf("Output: %v\n", addToArrayForm(a, k))
+  fmt.Printf("Expect: %v\n", o)
 
-  a, k, o = []int{2, 1, 5}, 806, []int{1, 0, 2, 1}
+  a, k, o = []int{2,1,5}, 806, []int{1,0,2,1}
   fmt.Printf("Input:  %v, %d\n", a, k)
-  fmt.Printf("Output: %v\nExpect: %v\n", addToArrayForm(a, k), o)
+  fmt.Printf("Output: %v\n", addToArrayForm(a, k))
+  fmt.Printf("Expect: %v\n", o)
 
   a, k, o = []int{9,9,9,9,9,9,9,9,9,9}, 1, []int{1,0,0,0,0,0,0,0,0,0,0}
   fmt.Printf("Input:  %v, %d\n", a, k)
-  fmt.Printf("Output: %v\nExpect: %v\n", addToArrayForm(a, k), o)
+  fmt.Printf("Output: %v\n", addToArrayForm(a, k))
+  fmt.Printf("Expect: %v\n", o)
 
-  a, k, o = []int{0}, 23, []int{2, 3}
+  a, k, o = []int{0}, 23, []int{2,3}
   fmt.Printf("Input:  %v, %d\n", a, k)
-  fmt.Printf("Output: %v\nExpect: %v\n", addToArrayForm(a, k), o)
-
+  fmt.Printf("Output: %v\n", addToArrayForm(a, k))
+  fmt.Printf("Expect: %v\n", o)
 }
 
-// T: O(max(N, log(K))) N is the length of A
-// M: O(max(N, log(K)))
+// T: O(max(n, log(k))) n is the length of A
+// M: O(max(n, log(k)))
 // -- start --
 
 func addToArrayForm(A []int, K int) []int {

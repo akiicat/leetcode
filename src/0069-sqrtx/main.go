@@ -39,7 +39,7 @@ func main() {
   fmt.Printf("Expect: %d\n", o)
 }
 
-// T: O(log(N))
+// T: O(log(n))
 // M: O(1)
 // -- start --
 

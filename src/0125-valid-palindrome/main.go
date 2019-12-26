@@ -2,13 +2,28 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: true\n", "A man, a plan, a canal: Panama", isPalindrome("A man, a plan, a canal: Panama"))
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: false\n", "race a car", isPalindrome("race a car"))
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: false\n", "OP", isPalindrome("OP"))
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: false\n", "0P", isPalindrome("0P"))
+  i, o := "A man, a plan, a canal: Panama", true
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isPalindrome(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "race a car", false
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isPalindrome(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "OP", false
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isPalindrome(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "0P", false
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isPalindrome(i))
+  fmt.Printf("Expect: %t\n", o)
 }
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 // -- start --
 

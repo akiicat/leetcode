@@ -30,7 +30,7 @@ func main() {
 }
 
 // https://leetcode.com/articles/sum-of-square-numbers/
-// T: O(sqrt(N) * log(N))
+// T: O(sqrt(n) * log(n))
 // M: O(1)
 // -- start --
 
@@ -38,11 +38,11 @@ func judgeSquareSum(c int) bool {
   return judgeSquareSumFermatTheorem(c)
 }
 
-// T: O(sqrt(N) * log(N))
+// T: O(sqrt(n) * log(n))
 // M: O(1)
 func judgeSquareSumSqrt(c int) bool {
-  for a := 0; a * a <= c; a++ { // sqrt(N)
-    b := math.Sqrt(float64(c - a * a)) // log(N)
+  for a := 0; a * a <= c; a++ { // sqrt(n)
+    b := math.Sqrt(float64(c - a * a)) // log(n)
     if b == float64(int(b)) {
       return true
     }
@@ -51,7 +51,7 @@ func judgeSquareSumSqrt(c int) bool {
   return false
 }
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 func judgeSquareSumBetterBruteForce(c int) bool {
   for a := 0; a * a <= c; a++ {
@@ -64,7 +64,7 @@ func judgeSquareSumBetterBruteForce(c int) bool {
   return false
 }
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 func judgeSquareSumBruteForce(c int) bool {
   for a := 0; a * a <= c; a++ {
@@ -79,7 +79,7 @@ func judgeSquareSumBruteForce(c int) bool {
 }
 
 // leetcode 367.
-// T: O(sqrt(N))
+// T: O(sqrt(n))
 // M: O(1)
 func isPerfectSquare(num int) bool {
 	i := 1
@@ -90,12 +90,12 @@ func isPerfectSquare(num int) bool {
 	return num == 0
 }
 
-// T: O(sqrt(N) * log(N))
+// T: O(sqrt(n) * log(n))
 // M: O(1)
 func judgeSquareSumBinarySearch(c int) bool {
-  for a := 0; a * a <= c; a++ { // sqrt(N)
+  for a := 0; a * a <= c; a++ { // sqrt(n)
     b := c - a * a
-    if binarySearch(0, b, b) { // log(N)
+    if binarySearch(0, b, b) { // log(n)
       return true
     }
   }
@@ -104,7 +104,7 @@ func judgeSquareSumBinarySearch(c int) bool {
 }
 
 // leetcode 69.
-// T: O(log(N))
+// T: O(log(n))
 // M: O(1)
 func binarySearch(start, end, num int) bool {
   if start > end {
@@ -123,7 +123,7 @@ func binarySearch(start, end, num int) bool {
   return binarySearch(mid + 1, end, num)
 }
 
-// T: O(sqrt(N) * log(N))
+// T: O(sqrt(n) * log(n))
 // M: O(1)
 func judgeSquareSumFermatTheorem(c int) bool {
   for a := 2; a * a <= c; a++ {

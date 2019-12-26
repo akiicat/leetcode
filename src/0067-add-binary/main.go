@@ -2,16 +2,18 @@ package main
 import "fmt"
 
 func main() {
-  i, o := []string{"11", "1"}, "100"
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\nExpect: %v\n", addBinary(i[0], i[1]), o)
+  a, b, o := "11", "1", "100"
+  fmt.Printf("Input:  %s, %s\n", a, b)
+  fmt.Printf("Output: %v\n", addBinary(a, b))
+  fmt.Printf("Expect: %v\n", o)
 
-  i, o = []string{"1010", "1011"}, "10101"
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\nExpect: %v\n", addBinary(i[0], i[1]), o)
+  a, b, o = "1010", "1011", "10101"
+  fmt.Printf("Input:  %s, %s\n", a, b)
+  fmt.Printf("Output: %v\n", addBinary(a, b))
+  fmt.Printf("Expect: %v\n", o)
 }
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 // -- start --
 

@@ -1,30 +1,22 @@
 package main
 import "fmt"
+import . "main/pkg/tree_node"
 
-type TreeNode struct {
-    Val int
-    Left *TreeNode
-    Right *TreeNode
-}
+// type TreeNode struct {
+//     Val int
+//     Left *TreeNode
+//     Right *TreeNode
+// }
 
 func main() {
-  //     5
-  //    / \
-  //   3   6
-  //  / \   \
-  // 2   4   7
-  t := &TreeNode{Val: 5}
-  t.Left = &TreeNode{Val: 3}
-  t.Right = &TreeNode{Val: 6}
-  t.Left.Left = &TreeNode{Val: 2}
-  t.Left.Right = &TreeNode{Val: 4}
-  t.Right.Right = &TreeNode{Val: 7}
-
-  fmt.Printf("Input:  [5, 3, 6, 2, 4, 0, 7]\nOutput: %t\nExpect: true\n" , findTarget(t, 9))
+  i, t, o := NewTreeNode("5,3,6,2,4,0,7"), 9, true
+  fmt.Printf("Input:  %s target=%d\n", i.ToStr(), t)
+  fmt.Printf("Output: %t\n", findTarget(i, t))
+  fmt.Printf("Expect: %t\n", o)
 }
 
-// T: O(N)
-// M: O(N)
+// T: O(n)
+// M: O(n)
 // -- start --
 
 func findTarget(root *TreeNode, k int) bool {

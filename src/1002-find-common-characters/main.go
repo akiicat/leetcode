@@ -13,7 +13,7 @@ func main() {
   fmt.Printf("Expect: %v\n", o)
 }
 
-// T: O(N) N for all of chars
+// T: O(n) n for all of chars
 // M: O(1)
 // -- start --
 

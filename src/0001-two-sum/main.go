@@ -2,12 +2,19 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Input:  %v\nOutput: %v\nExpect: %v\n", []int{2, 7, 11, 19}, twoSum([]int{2, 7, 11, 19}, 9), []int{0, 1})
-  fmt.Printf("Input:  %v\nOutput: %v\nExpect: %v\n", []int{3, 2, 4}, twoSum([]int{3, 2, 4}, 6), []int{1, 2})
+  i, t, o := []int{2,7,11,19}, 9, []int{0,1}
+  fmt.Printf("Input:  %v, %d\n", i, t)
+  fmt.Printf("Output: %v\n", twoSum(i, t))
+  fmt.Printf("Expect: %v\n", o)
+
+  i, t, o = []int{3,2,4}, 6, []int{1,2}
+  fmt.Printf("Input:  %v, %d\n", i, t)
+  fmt.Printf("Output: %v\n", twoSum(i, t))
+  fmt.Printf("Expect: %v\n", o)
 }
 
-// T: O(N)
-// M: O(N)
+// T: O(n)
+// M: O(n)
 // -- start --
 
 func twoSum(nums []int, target int) []int {

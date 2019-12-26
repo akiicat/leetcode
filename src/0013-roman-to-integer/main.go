@@ -4,26 +4,31 @@ import "fmt"
 func main() {
   i, o := "III", 3
   fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\nExpect: %d\n", romanToInt(i), o)
+  fmt.Printf("Output: %d\n", romanToInt(i))
+  fmt.Printf("Expect: %d\n", o)
 
   i, o = "IV", 4
   fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\nExpect: %d\n", romanToInt(i), o)
+  fmt.Printf("Output: %d\n", romanToInt(i))
+  fmt.Printf("Expect: %d\n", o)
 
   i, o = "IX", 9
   fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\nExpect: %d\n", romanToInt(i), o)
+  fmt.Printf("Output: %d\n", romanToInt(i))
+  fmt.Printf("Expect: %d\n", o)
 
   i, o = "LVIII", 58
   fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\nExpect: %d\n", romanToInt(i), o)
+  fmt.Printf("Output: %d\n", romanToInt(i))
+  fmt.Printf("Expect: %d\n", o)
 
   i, o = "MCMXCIV", 1994
   fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\nExpect: %d\n", romanToInt(i), o)
+  fmt.Printf("Output: %d\n", romanToInt(i))
+  fmt.Printf("Expect: %d\n", o)
 }
 
-// T: O(N) N is the sum of all characters in all strings.
+// T: O(n) n is the sum of all characters in all strings.
 // M: O(1)
 // -- start --
 

@@ -2,17 +2,49 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: true\n", "()", isValid("()"))
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: true\n", "()[]{}", isValid("()[]{}"))
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: true\n", "{[]}", isValid("{[]}"))
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: false\n", "[", isValid("["))
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: false\n", "]", isValid("]"))
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: false\n", "(]", isValid("(]"))
-  fmt.Printf("Input:  %s\nOutput: %t\nExpect: false\n", "([)]", isValid("([)]"))
+  i, o := "()", true
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isValid(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "()", true
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isValid(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "()[]{}", true
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isValid(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "{[]}", true
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isValid(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "[", false
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isValid(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "]", false
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isValid(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "(]", false
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isValid(i))
+  fmt.Printf("Expect: %t\n", o)
+
+  i, o = "([)]", false
+  fmt.Printf("Input:  %s\n", i)
+  fmt.Printf("Output: %t\n", isValid(i))
+  fmt.Printf("Expect: %t\n", o)
 }
 
-// T: O(N) because we simply traverse the given string one character at a time and push and pop operations on a stack take O(1) time.
-// M: O(N) as we push all opening brackets onto the stack and in the worst case, we will end up pushing all the brackets onto the stack. e.g. ((((((((((.
+// T: O(n) because we simply traverse the given string one character at a time and push and pop operations on a stack take O(1) time.
+// M: O(n) as we push all opening brackets onto the stack and in the worst case, we will end up pushing all the brackets onto the stack. e.g. ((((((((((.
 // -- start --
 
 func isValid(s string) bool {

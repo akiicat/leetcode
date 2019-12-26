@@ -1,13 +1,19 @@
 package main
 import "fmt"
-// import "math/bits"
 
 func main() {
-  fmt.Printf("Input:  [3 2 3]\nOutput: %d\nExpect: 3\n", majorityElement([]int{3, 2, 3}))
-  fmt.Printf("Input:  [2 2 1 1 1 2 2]\nOutput: %d\nExpect: 2\n", majorityElement([]int{2, 2, 1, 1, 1, 2, 2}))
+  i, o := []int{3,2,3}, 3
+  fmt.Printf("Input:  %v\n", i)
+  fmt.Printf("Output: %d\n", majorityElement(i))
+  fmt.Printf("Expect: %d\n", o)
+
+  i, o = []int{2,2,1,1,1,2,2}, 2
+  fmt.Printf("Input:  %v\n", i)
+  fmt.Printf("Output: %d\n", majorityElement(i))
+  fmt.Printf("Expect: %d\n", o)
 }
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 // -- start --
 

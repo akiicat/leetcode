@@ -36,11 +36,11 @@ func main() {
 
 // leetcode 70. fibonacci
 // https://leetcode.com/articles/climbing-stairs/
-// T: O(log(N))
+// T: O(log(n))
 // M: O(1)
 // -- start --
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 func fib(n int) int {
   x1, x2 := 0, 1
@@ -52,7 +52,7 @@ func fib(n int) int {
   return x2
 }
 
-// T: O(log(N))
+// T: O(log(n))
 // M: O(1)
 func fibFormula(n int) int {
   sqrt5 := math.Sqrt(5)
@@ -61,7 +61,7 @@ func fibFormula(n int) int {
 }
 
 
-// T: O(2 ** N)
+// T: O(2 ** n)
 // M: O(1)
 func fibRecursive(n int) int {
   if n == 0 {

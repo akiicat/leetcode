@@ -13,8 +13,8 @@ func main() {
   fmt.Printf("Expect: %d\n", o)
 }
 
-// T: O(N)
-// M: O(N)
+// T: O(n)
+// M: O(n)
 // -- start --
 
 func distributeCandies(candies []int) int {

@@ -2,33 +2,33 @@ package main
 import "fmt"
 
 func main() {
-  i, o := []string{"hello", "ll"}, 2
-  fmt.Printf("Input:  %s, %s\n", i[0], i[1])
-  fmt.Printf("Output: %d\n", strStr(i[0], i[1]))
+  h, n, o := "hello", "ll", 2
+  fmt.Printf("Input:  %s, %s\n", h, n)
+  fmt.Printf("Output: %d\n", strStr(h, n))
   fmt.Printf("Expect: %d\n", o)
 
-  i, o = []string{"aaaaa", "bba"}, -1
-  fmt.Printf("Input:  %s, %s\n", i[0], i[1])
-  fmt.Printf("Output: %d\n", strStr(i[0], i[1]))
+  h, n, o = "aaaaa", "bba", -1
+  fmt.Printf("Input:  %s, %s\n", h, n)
+  fmt.Printf("Output: %d\n", strStr(h, n))
   fmt.Printf("Expect: %d\n", o)
 
-  i, o = []string{"", ""}, 0
-  fmt.Printf("Input:  %s, %s\n", i[0], i[1])
-  fmt.Printf("Output: %d\n", strStr(i[0], i[1]))
+  h, n, o = "", "", 0
+  fmt.Printf("Input:  %s, %s\n", h, n)
+  fmt.Printf("Output: %d\n", strStr(h, n))
   fmt.Printf("Expect: %d\n", o)
 
-  i, o = []string{"", "a"}, -1
-  fmt.Printf("Input:  %s, %s\n", i[0], i[1])
-  fmt.Printf("Output: %d\n", strStr(i[0], i[1]))
+  h, n, o = "", "a", -1
+  fmt.Printf("Input:  %s, %s\n", h, n)
+  fmt.Printf("Output: %d\n", strStr(h, n))
   fmt.Printf("Expect: %d\n", o)
 
-  i, o = []string{"a", "a"}, 0
-  fmt.Printf("Input:  %s, %s\n", i[0], i[1])
-  fmt.Printf("Output: %d\n", strStr(i[0], i[1]))
+  h, n, o = "a", "a", 0
+  fmt.Printf("Input:  %s, %s\n", h, n)
+  fmt.Printf("Output: %d\n", strStr(h, n))
   fmt.Printf("Expect: %d\n", o)
 }
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 // -- start --
 

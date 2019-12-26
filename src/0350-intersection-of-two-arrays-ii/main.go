@@ -2,19 +2,19 @@ package main
 import "fmt"
 
 func main() {
-  i, o := [][]int{[]int{1,2,2,1}, []int{2,2}}, []int{2}
-  fmt.Printf("Input:  %v %v\n", i[0], i[1])
-  fmt.Printf("Output: %v\n", intersection(i[0], i[1]))
+  i1, i2, o := []int{1,2,2,1}, []int{2,2}, []int{2,2}
+  fmt.Printf("Input:  %v %v\n", i1, i2)
+  fmt.Printf("Output: %v\n", intersect(i1, i2))
   fmt.Printf("Expect: %v\n", o)
 
-  i, o = [][]int{[]int{4,9,5}, []int{9,4,9,8,4}}, []int{9,4}
-  fmt.Printf("Input:  %v %v\n", i[0], i[1])
-  fmt.Printf("Output: %v\n", intersection(i[0], i[1]))
+  i1, i2, o = []int{4,9,5}, []int{9,4,9,8,4}, []int{9,4}
+  fmt.Printf("Input:  %v %v\n", i1, i2)
+  fmt.Printf("Output: %v\n", intersect(i1, i2))
   fmt.Printf("Expect: %v\n", o)
 }
 
-// T: O(N + M)
-// M: O(N + M)
+// T: O(n + m)
+// M: O(n + m)
 // -- start --
 
 func intersect(nums1 []int, nums2 []int) []int {

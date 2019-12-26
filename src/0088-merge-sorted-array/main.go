@@ -6,28 +6,32 @@ func main() {
   o := []int{1,2,2,3,5,6}
   fmt.Printf("Input:  %v, %d, %v, %d\n", i1, i2, i3, i4)
   merge(i1, i2, i3, i4)
-  fmt.Printf("Output: %v\nExpect: %v\n", i1, o)
+  fmt.Printf("Output: %v\n", i1)
+  fmt.Printf("Expect: %v\n", o)
 
   i1, i2, i3, i4 = []int{1,2,4,5,6,0}, 5, []int{3}, 1
   o = []int{1,2,3,4,5,6}
   fmt.Printf("Input:  %v, %d, %v, %d\n", i1, i2, i3, i4)
   merge(i1, i2, i3, i4)
-  fmt.Printf("Output: %v\nExpect: %v\n", i1, o)
+  fmt.Printf("Output: %v\n", i1)
+  fmt.Printf("Expect: %v\n", o)
 
   i1, i2, i3, i4 = []int{1}, 1, []int{}, 0
   o = []int{1}
   fmt.Printf("Input:  %v, %d, %v, %d\n", i1, i2, i3, i4)
   merge(i1, i2, i3, i4)
-  fmt.Printf("Output: %v\nExpect: %v\n", i1, o)
+  fmt.Printf("Output: %v\n", i1)
+  fmt.Printf("Expect: %v\n", o)
 
   i1, i2, i3, i4 = []int{0}, 0, []int{1}, 1
   o = []int{1}
   fmt.Printf("Input:  %v, %d, %v, %d\n", i1, i2, i3, i4)
   merge(i1, i2, i3, i4)
-  fmt.Printf("Output: %v\nExpect: %v\n", i1, o)
+  fmt.Printf("Output: %v\n", i1)
+  fmt.Printf("Expect: %v\n", o)
 }
 
-// T: O(N) N is m + n
+// T: O(n) n is m + n
 // M: O(1)
 // -- start --
 

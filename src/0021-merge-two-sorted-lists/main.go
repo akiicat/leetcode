@@ -14,7 +14,7 @@ func main() {
   fmt.Printf("Expect: %s\n", o.ToStr())
 }
 
-// T: O(N) total nodes
+// T: O(n) total nodes
 // M: O(1)
 // -- start --
 

@@ -2,21 +2,29 @@ package main
 import "fmt"
 
 func main() {
-  s := []string{"0", "0"}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: 0\n", s, addStrings(s[0], s[1]))
+  i1, i2, o := "0", "0", "0"
+  fmt.Printf("Input:  %s, %s\n", i1, i2)
+  fmt.Printf("Output: %s\n", addStrings(i1, i2))
+  fmt.Printf("Expect: %s\n", o)
 
-  s = []string{"10", "90"}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: 100\n", s, addStrings(s[0], s[1]))
+  i1, i2, o = "10", "90", "100"
+  fmt.Printf("Input:  %s, %s\n", i1, i2)
+  fmt.Printf("Output: %s\n", addStrings(i1, i2))
+  fmt.Printf("Expect: %s\n", o)
 
-  s = []string{"9", "99"}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: 108\n", s, addStrings(s[0], s[1]))
+  i1, i2, o = "9", "99", "108"
+  fmt.Printf("Input:  %s, %s\n", i1, i2)
+  fmt.Printf("Output: %s\n", addStrings(i1, i2))
+  fmt.Printf("Expect: %s\n", o)
 
-  s = []string{"5432", "54"}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: 5486\n", s, addStrings(s[0], s[1]))
+  i1, i2, o = "5432", "54", "5486"
+  fmt.Printf("Input:  %s, %s\n", i1, i2)
+  fmt.Printf("Output: %s\n", addStrings(i1, i2))
+  fmt.Printf("Expect: %s\n", o)
 }
 
-// T: O(N) N is the max of characters length in all strings.
-// M: O(N)
+// T: O(n) n is the max of characters length in all strings.
+// M: O(n)
 // -- start --
 
 func addStrings(num1 string, num2 string) string {

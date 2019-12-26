@@ -2,27 +2,39 @@ package main
 import "fmt"
 
 func main() {
-  strs := []string{"flower","flow","flight"}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: fl\n", strs, longestCommonPrefix(strs))
+  strs, o := []string{"flower","flow","flight"}, "fl"
+  fmt.Printf("Input:  %v\n", strs)
+  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
+  fmt.Printf("Expect: %s\n", o)
 
-  strs = []string{"a","ac"}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: a\n", strs, longestCommonPrefix(strs))
+  strs, o = []string{"a","ac"}, "a"
+  fmt.Printf("Input:  %v\n", strs)
+  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
+  fmt.Printf("Expect: %s\n", o)
 
-  strs = []string{"aa","a"}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: a\n", strs, longestCommonPrefix(strs))
+  strs, o = []string{"aa","a"}, "a"
+  fmt.Printf("Input:  %v\n", strs)
+  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
+  fmt.Printf("Expect: %s\n", o)
 
-  strs = []string{"dog","racecar","car"}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: \n", strs, longestCommonPrefix(strs))
+  strs, o = []string{"dog","racecar","car"}, ""
+  fmt.Printf("Input:  %v\n", strs)
+  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
+  fmt.Printf("Expect: %s\n", o)
 
-  strs = []string{"","b"}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: \n", strs, longestCommonPrefix(strs))
+  strs, o = []string{"","b"}, ""
+  fmt.Printf("Input:  %v\n", strs)
+  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
+  fmt.Printf("Expect: %s\n", o)
 
-  strs = []string{}
-  fmt.Printf("Input:  %v\nOutput: %s\nExpect: \n", strs, longestCommonPrefix(strs))
+  strs, o = []string{}, ""
+  fmt.Printf("Input:  %v\n", strs)
+  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
+  fmt.Printf("Expect: %s\n", o)
 }
 
 // https://leetcode.com/articles/longest-common-prefix/
-// T: O(N) N is the sum of all characters in all strings.
+// T: O(n) n is the sum of all characters in all strings.
 // M: O(1)
 // -- start --
 

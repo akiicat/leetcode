@@ -2,13 +2,28 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Input:  123\nOutput: %d\nExpect: 321\n", reverse(123))
-  fmt.Printf("Input:  -123\nOutput: %d\nExpect: -321\n", reverse(-123))
-  fmt.Printf("Input:  120\nOutput: %d\nExpect: 21\n", reverse(120))
-  fmt.Printf("Input:  1534236469\nOutput: %d\nExpect: 0\n", reverse(1534236469))
+  i, o := 123, 321
+  fmt.Printf("Input:  %d\n", i)
+  fmt.Printf("Output: %d\n", reverse(i))
+  fmt.Printf("Expect: %d\n", o)
+
+  i, o = -123, -321
+  fmt.Printf("Input:  %d\n", i)
+  fmt.Printf("Output: %d\n", reverse(i))
+  fmt.Printf("Expect: %d\n", o)
+
+  i, o = 120, 21
+  fmt.Printf("Input:  %d\n", i)
+  fmt.Printf("Output: %d\n", reverse(i))
+  fmt.Printf("Expect: %d\n", o)
+
+  i, o = 1534236469, 0
+  fmt.Printf("Input:  %d\n", i)
+  fmt.Printf("Output: %d\n", reverse(i))
+  fmt.Printf("Expect: %d\n", o)
 }
 
-// T: O(N)
+// T: O(n)
 // M: O(1)
 // -- start --
 
