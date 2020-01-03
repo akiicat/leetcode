@@ -3,8 +3,20 @@ import "fmt"
 import "math/bits"
 
 func main() {
-  fmt.Printf("Input:  %032b\nOutput: %d\nExpect: 3\n", 11, hammingWeight(11))
-  fmt.Printf("Input:  %032b\nOutput: %d\nExpect: 3\n", 11, hammingWeightAlgorithm(11))
+  i, o := 11, 3
+  fmt.Printf("Input:  %032b\n", i)
+  fmt.Printf("Output: %d\n", hammingWeight(11))
+  fmt.Printf("Expect: %d\n", o)
+
+  i, o = 128, 1
+  fmt.Printf("Input:  %032b\n", i)
+  fmt.Printf("Output: %d\n", hammingWeight(11))
+  fmt.Printf("Expect: %d\n", o)
+
+  i, o = 4294967293, 3
+  fmt.Printf("Input:  %032b\n", i)
+  fmt.Printf("Output: %d\n", hammingWeight(11))
+  fmt.Printf("Expect: %d\n", o)
 }
 
 // T: O(1) 32 times for every 32bit number no matter how large the number is
@@ -12,7 +24,7 @@ func main() {
 // -- start --
 
 func hammingWeight(num uint32) int {
-    return bits.OnesCount32(num)
+  return bits.OnesCount32(num)
 }
 
 func hammingWeightForLoop(num uint32) int {
