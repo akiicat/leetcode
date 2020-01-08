@@ -50,12 +50,15 @@ func main() {
   fmt.Printf("Expect: %t\n", o)
 }
 
+// leetcode 28. 796.
 // T: O(log(n))
 // M: O(1)
 // -- start --
 
 func repeatedSubstringPattern(s string) bool {
 	ss := (s + s)[1:len(s)*2-1] // shift one
+
+  // leetcode 28.
 	return strings.Contains(ss, s)
 }
 
