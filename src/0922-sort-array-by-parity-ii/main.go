@@ -13,6 +13,7 @@ func main() {
   fmt.Printf("Expect: %v\n", o)
 }
 
+// leetcode 905.
 // T: O(n)
 // M: O(1)
 // -- start --
