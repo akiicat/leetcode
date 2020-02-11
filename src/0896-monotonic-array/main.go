@@ -1,6 +1,6 @@
 package main
 
-// T: O(n) n is the length of the string
+// T: O(n)
 // M: O(1)
 // -- start --
 
