@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := [][]int{[]int{0,1,0,0}, []int{1,1,1,0}, []int{0,1,0,0}, []int{1,1,0,0}}, 16
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", islandPerimeter(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = [][]int{[]int{1,0}}, 4
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", islandPerimeter(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(m*n)
 // M: O(1)

@@ -1,18 +1,10 @@
 package main
-import "fmt"
 
 // type TreeNode struct {
 //     Val int
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-
-func main() {
-  i, o := 38, 2
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", addDigits(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(1)
 // M: O(1)

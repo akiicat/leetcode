@@ -1,18 +1,10 @@
 package main
-import "fmt"
 import . "main/pkg/list_node"
 
 // type ListNode struct {
 //   Val int
 //   Next *ListNode
 // }
-
-func main() {
-  i1, i2, o := NewListNode([]int{1,2,4}), NewListNode([]int{1,3,4}), NewListNode([]int{1,1,2,3,4,4})
-  fmt.Printf("Input:  %s, %s\n", i1.ToStr(), i2.ToStr())
-  fmt.Printf("Output: %s\n", mergeTwoLists(i1, i2).ToStr())
-  fmt.Printf("Expect: %s\n", o.ToStr())
-}
 
 // T: O(n) total nodes
 // M: O(1)

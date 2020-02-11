@@ -1,5 +1,4 @@
 package main
-import "fmt"
 import . "main/pkg/tree_node"
 
 // type TreeNode struct {
@@ -7,19 +6,6 @@ import . "main/pkg/tree_node"
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-
-func main() {
-  i, o := NewTreeNode("1,null,2,2"), []int{2}
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %v\n", findMode(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = NewTreeNode("2147483647"), []int{2147483647}
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %v\n", findMode(i))
-  fmt.Printf("Expect: %v\n", o)
-
-}
 
 // https://leetcode.com/problems/find-mode-in-binary-search-tree/discuss/329452/Golang-beats-100-O(1)-space
 //

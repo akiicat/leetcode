@@ -1,18 +1,5 @@
 package main
-import "fmt"
 import "strings"
-
-func main() {
-  a, b, o := "this apple is sweet", "this apple is sour", []string{"sweet", "sour"}
-  fmt.Printf("Input:  %s %s\n", a, b)
-  fmt.Printf("Output: %v\n", uncommonFromSentences(a, b))
-  fmt.Printf("Expect: %v\n", o)
-
-  a, b, o = "apple apple", "banana", []string{"banana"}
-  fmt.Printf("Input:  %s %s\n", a, b)
-  fmt.Printf("Output: %v\n", uncommonFromSentences(a, b))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n + m) n, m are the lengths of A, B respectively
 // M: O(n + m)

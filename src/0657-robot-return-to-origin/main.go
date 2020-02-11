@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := "UD", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", judgeCircle(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "LL", false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", judgeCircle(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1)

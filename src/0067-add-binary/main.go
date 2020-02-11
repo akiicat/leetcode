@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  a, b, o := "11", "1", "100"
-  fmt.Printf("Input:  %s, %s\n", a, b)
-  fmt.Printf("Output: %v\n", addBinary(a, b))
-  fmt.Printf("Expect: %v\n", o)
-
-  a, b, o = "1010", "1011", "10101"
-  fmt.Printf("Input:  %s, %s\n", a, b)
-  fmt.Printf("Output: %v\n", addBinary(a, b))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n)
 // M: O(1)
@@ -38,13 +25,6 @@ func adder(a, b, c bool) (bool, bool) {
   // sum: a ^ b ^ c
   // carry: (a & b) | (b & c) | (c & a)
   return ((a != b) != c), a && b || b && c || c && a
-}
-
-func max(a, b int) int {
-  if a > b {
-    return a
-  }
-  return b
 }
 
 // -- end --

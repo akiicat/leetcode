@@ -1,46 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := [][]int{
-    []int{4,3,8,4},
-    []int{9,5,1,9},
-    []int{2,7,6,2},
-  }, 1
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", numMagicSquaresInside(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = [][]int{
-    []int{5,5,5},
-    []int{5,5,5},
-    []int{5,5,5},
-  }, 0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", numMagicSquaresInside(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = [][]int{
-    []int{3,2,1,6},
-    []int{5,9,6,8},
-    []int{1,5,1,2},
-    []int{3,7,3,4},
-  }, 0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", numMagicSquaresInside(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = [][]int{
-    []int{1,3,7,8,8},
-    []int{8,3,2,7,4},
-    []int{3,8,4,0,9},
-    []int{8,1,6,5,0},
-    []int{7,2,1,8,6},
-  }, 0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", numMagicSquaresInside(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n * m) n, n are the number of rows and columns
 // M: O(1)

@@ -1,13 +1,5 @@
 package main
-import "fmt"
 import "sort"
-
-func main() {
-  i, o := []int{1,4,3,2}, 4
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", arrayPairSum(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(r) r is the maximum number in array
 // M: O(r)

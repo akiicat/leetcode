@@ -1,18 +1,5 @@
 package main
-import "fmt"
 import "strings"
-
-func main() {
-  a, b, o := "abcde", "cdeab", true
-  fmt.Printf("Input:  %s %s\n", a, b)
-  fmt.Printf("Output: %t\n", rotateString(a, b))
-  fmt.Printf("Expect: %t\n", o)
-
-  a, b, o = "abcde", "abced", false
-  fmt.Printf("Input:  %s %s\n", a, b)
-  fmt.Printf("Output: %t\n", rotateString(a, b))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // https://leetcode.com/articles/rotate-string/
 // leetcode 28. 459.

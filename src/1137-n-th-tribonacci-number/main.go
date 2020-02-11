@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o = 4, 4
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", tribonacci(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 4, 4
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", tribonacci(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 25, 1389537
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", tribonacci(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // Formula
 // http://mathworld.wolfram.com/TribonacciNumber.html
@@ -24,13 +6,10 @@ func main() {
 // M: O(1)
 // -- start --
 
-func tribonacci(n int) int {
-  return tribonacciDynamicProgramming(n)
-}
-
+// DynamicProgramming
 // T: O(n)
 // M: O(1)
-func tribonacciDynamicProgramming(n int) int {
+func tribonacci(n int) int {
   if n == 0 {
     return 0
   }

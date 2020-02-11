@@ -1,42 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  c, n, o := 7, 4, []int{1,2,3,1}
-  fmt.Printf("Input:  %d %d\n", c, n)
-  fmt.Printf("Output: %v\n", distributeCandies(c, n))
-  fmt.Printf("Expect: %v\n", o)
-
-  c, n, o = 10, 3, []int{5,2,3}
-  fmt.Printf("Input:  %d %d\n", c, n)
-  fmt.Printf("Output: %v\n", distributeCandies(c, n))
-  fmt.Printf("Expect: %v\n", o)
-
-  c, n, o = 12, 3, []int{5,4,3}
-  fmt.Printf("Input:  %d %d\n", c, n)
-  fmt.Printf("Output: %v\n", distributeCandies(c, n))
-  fmt.Printf("Expect: %v\n", o)
-
-  c, n, o = 21, 3, []int{5,7,9}
-  fmt.Printf("Input:  %d %d\n", c, n)
-  fmt.Printf("Output: %v\n", distributeCandies(c, n))
-  fmt.Printf("Expect: %v\n", o)
-
-  c, n, o = 23, 3, []int{7,7,9}
-  fmt.Printf("Input:  %d %d\n", c, n)
-  fmt.Printf("Output: %v\n", distributeCandies(c, n))
-  fmt.Printf("Expect: %v\n", o)
-
-  c, n, o = 60, 4, []int{15,18,15,12}
-  fmt.Printf("Input:  %d %d\n", c, n)
-  fmt.Printf("Output: %v\n", distributeCandies(c, n))
-  fmt.Printf("Expect: %v\n", o)
-
-  c, n, o = 90, 4, []int{27,18,21,24}
-  fmt.Printf("Input:  %d %d\n", c, n)
-  fmt.Printf("Output: %v\n", distributeCandies(c, n))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(log(c))
 // M: O(1)

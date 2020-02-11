@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{4,2,5,7}, []int{4,5,2,7}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", sortArrayByParityII(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = []int{2,3,1,1,4,0,0,4,3,3}, []int{2,3,0,1,4,1,0,3,4,3}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", sortArrayByParityII(i))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // leetcode 905.
 // T: O(n)

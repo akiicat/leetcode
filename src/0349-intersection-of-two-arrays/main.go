@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i1, i2, o := []int{1,2,2,1}, []int{2,2}, []int{2}
-  fmt.Printf("Input:  %v %v\n", i1, i2)
-  fmt.Printf("Output: %v\n", intersection(i1, i2))
-  fmt.Printf("Expect: %v\n", o)
-
-  i1, i2, o = []int{4,9,5}, []int{9,4,9,8,4}, []int{9,4}
-  fmt.Printf("Input:  %v %v\n", i1, i2)
-  fmt.Printf("Output: %v\n", intersection(i1, i2))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // https://leetcode.com/articles/intersection-of-two-arrays/
 // T: O(n + m)

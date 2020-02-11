@@ -1,23 +1,5 @@
 package main
-import "fmt"
 import "bytes"
-
-func main() {
-  i, o := "hello", "holle"
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %s\n", reverseVowels(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = "leetcode", "leotcede"
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %s\n", reverseVowels(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = "aA", "Aa"
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %s\n", reverseVowels(i))
-  fmt.Printf("Expect: %s\n", o)
-}
 
 // T: O(n)
 // M: O(1)

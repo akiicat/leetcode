@@ -1,28 +1,5 @@
 package main
-import "fmt"
 import "sort"
-
-func main() {
-  i, o := []int{2,1,2}, 5
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", largestPerimeter(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{1,2,1}, 0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", largestPerimeter(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{3,2,3,4}, 10
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", largestPerimeter(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{3,6,2,3}, 8
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", largestPerimeter(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n*log(n)) n for the number of A
 // M: O(1)

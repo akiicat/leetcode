@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := [][]int{[]int{0,0},[]int{1,0},[]int{2,0}}, 2
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", numberOfBoomerangs(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = [][]int{[]int{0,0},[]int{1,0},[]int{-1,0},[]int{0,1},[]int{0,-1}}, 20
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", numberOfBoomerangs(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n ** 2) n for the number of points
 // M: O(n)

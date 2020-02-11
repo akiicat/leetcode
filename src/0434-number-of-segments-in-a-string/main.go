@@ -1,27 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := "Hello, my name is John", 5
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", countSegments(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "Hello", 1
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", countSegments(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "", 0
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", countSegments(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "           ", 0
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", countSegments(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n) n is the length of string
 // M: O(1)

@@ -1,18 +1,5 @@
 package main
-import "fmt"
 import "math"
-
-func main() {
-  i, o := 16, true
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", isPerfectSquare(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = 14, false
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", isPerfectSquare(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // leetcode 69.
 // T: O(log(n)) // the time complexity of Sqrt function if log(n)

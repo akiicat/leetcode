@@ -1,33 +1,5 @@
 package main
-import "fmt"
 import "sort"
-
-func main() {
-  i, o := []int{2,6,4,8,10,9,15}, 5
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", findUnsortedSubarray(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{1}, 0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", findUnsortedSubarray(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{1,3,2,2,2}, 4
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", findUnsortedSubarray(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{1,2,3,3,3}, 0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", findUnsortedSubarray(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{1,3,2,3,3}, 2
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", findUnsortedSubarray(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // https://leetcode.com/articles/shortest-unsorted-continous-subarray/
 // T: O(n)

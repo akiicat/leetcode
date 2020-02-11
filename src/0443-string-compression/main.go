@@ -1,23 +1,5 @@
 package main
-import "fmt"
 import "strconv"
-
-func main() {
-  c, o1, o2 := []byte{'a','a','b','b','c','c','c'}, 6, "a2b2c3"
-  fmt.Printf("Input:  %s\n", c)
-  fmt.Printf("Output: %d %s\n", compress(c), c[:o1])
-  fmt.Printf("Expect: %d %s\n", o1, o2)
-
-  c, o1, o2 = []byte{'a'}, 1, "a"
-  fmt.Printf("Input:  %s\n", c)
-  fmt.Printf("Output: %d %s\n", compress(c), c[:o1])
-  fmt.Printf("Expect: %d %s\n", o1, o2)
-
-  c, o1, o2 = []byte{'a','b','b','b','b','b','b','b','b','b','b','b','b'}, 4, "ab12"
-  fmt.Printf("Input:  %s\n", c)
-  fmt.Printf("Output: %d %s\n", compress(c), c[:o1])
-  fmt.Printf("Expect: %d %s\n", o1, o2)
-}
 
 // T: O(n)
 // M: O(1)

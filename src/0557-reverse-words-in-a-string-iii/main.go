@@ -1,12 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := "Let's a ab take LeetCode contest", "s'teL a ba ekat edoCteeL tsetnoc"
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %s\n", reverseWords(i))
-  fmt.Printf("Expect: %s\n", o)
-}
 
 // T: O(n) n is the length of the string
 // M: O(1)

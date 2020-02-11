@@ -1,32 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := 6, 3
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", rotatedDigits(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 10, 4
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", rotatedDigits(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 12, 5
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", rotatedDigits(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 156, 60
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", rotatedDigits(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 857, 247
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", rotatedDigits(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(log(n))
 // M: O(log(n))

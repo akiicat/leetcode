@@ -1,14 +1,6 @@
 package main
-import "fmt"
 import "strconv"
 import "sort"
-
-func main() {
-  i, o := []int{5,4,3,2,1}, []string{"Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", findRelativeRanks(i))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // leetcode 414. 628.
 // T: O(n * log(n))

@@ -1,33 +1,5 @@
 package main
-import "fmt"
 import "math"
-
-func main() {
-  i, o := 2, 2
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", climbStairs(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 3, 3
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", climbStairs(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 4, 5
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", climbStairs(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 5, 8
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", climbStairs(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 9, 55
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", climbStairs(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // leetcode 509. fibonacci
 // https://leetcode.com/articles/climbing-stairs/

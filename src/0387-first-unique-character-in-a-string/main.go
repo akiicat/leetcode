@@ -1,27 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := "leetcode", 0
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", firstUniqChar(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "loveleetcode", 2
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", firstUniqChar(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "lel", 1
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", firstUniqChar(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "cc", -1
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", firstUniqChar(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(1)

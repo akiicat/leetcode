@@ -1,27 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{5,5,5,10,20}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", lemonadeChange(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{5,5,10}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", lemonadeChange(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{10,10}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", lemonadeChange(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{5,5,10,10,20}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", lemonadeChange(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1)

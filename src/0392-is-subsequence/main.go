@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  s, t, o := "abc", "ahbgdc", true
-  fmt.Printf("Input:  %s %s\n", s, t)
-  fmt.Printf("Output: %t\n", isSubsequence(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "axc", "ahbgdc", false
-  fmt.Printf("Input:  %s %s\n", s, t)
-  fmt.Printf("Output: %t\n", isSubsequence(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "aec", "abcde", false
-  fmt.Printf("Input:  %s %s\n", s, t)
-  fmt.Printf("Output: %t\n", isSubsequence(s, t))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1)

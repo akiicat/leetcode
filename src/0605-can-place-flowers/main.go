@@ -1,37 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, n, o := []int{1,0,0,0,1}, 1, true
-  fmt.Printf("Input:  %v, %d\n", i, n)
-  fmt.Printf("Output: %t\n", canPlaceFlowers(i, n))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, n, o = []int{1,0,0,0,1}, 2, false
-  fmt.Printf("Input:  %v, %d\n", i, n)
-  fmt.Printf("Output: %t\n", canPlaceFlowers(i, n))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, n, o = []int{1,0,0,0,0,1}, 2, false
-  fmt.Printf("Input:  %v, %d\n", i, n)
-  fmt.Printf("Output: %t\n", canPlaceFlowers(i, n))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, n, o = []int{1,0,0,0,1,0,0}, 2, true
-  fmt.Printf("Input:  %v, %d\n", i, n)
-  fmt.Printf("Output: %t\n", canPlaceFlowers(i, n))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, n, o = []int{0,0,1,0,0,0,1}, 2, true
-  fmt.Printf("Input:  %v, %d\n", i, n)
-  fmt.Printf("Output: %t\n", canPlaceFlowers(i, n))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, n, o = []int{0,1,0}, 1, false
-  fmt.Printf("Input:  %v, %d\n", i, n)
-  fmt.Printf("Output: %t\n", canPlaceFlowers(i, n))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n) 
 // M: O(1)

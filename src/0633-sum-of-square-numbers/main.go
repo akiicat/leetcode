@@ -1,33 +1,5 @@
 package main
-import "fmt"
 import "math"
-
-func main() {
-  i, o := 2, true
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", judgeSquareSum(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = 3, false
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", judgeSquareSum(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = 5, true
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", judgeSquareSum(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = 13, true
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", judgeSquareSum(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = 2147483645, false
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", judgeSquareSum(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // https://leetcode.com/articles/sum-of-square-numbers/
 // T: O(sqrt(n) * log(n))

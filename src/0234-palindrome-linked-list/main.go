@@ -1,33 +1,10 @@
 package main
-import "fmt"
 import . "main/pkg/list_node"
 
 // type ListNode struct {
 //   Val int
 //   Next *ListNode
 // }
-
-func main() {
-  i, o := NewListNode([]int{1,2}), false
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %t\n", isPalindrome(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = NewListNode([]int{1,2,2,1}), true
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %t\n", isPalindrome(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = NewListNode([]int{1,2,1}), true
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %t\n", isPalindrome(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = NewListNode([]int{1,0,0}), false
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %t\n", isPalindrome(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1)

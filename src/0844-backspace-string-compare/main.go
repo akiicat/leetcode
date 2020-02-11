@@ -1,33 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  s, t, o := "ab#c", "ad#c", true
-  fmt.Printf("Input:  %s %s\n", s, t)
-  fmt.Printf("Output: %t\n", backspaceCompare(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "ab##", "c#d#", true
-  fmt.Printf("Input:  %s %s\n", s, t)
-  fmt.Printf("Output: %t\n", backspaceCompare(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "a##c", "#a#c", true
-  fmt.Printf("Input:  %s %s\n", s, t)
-  fmt.Printf("Output: %t\n", backspaceCompare(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "a#c", "b", false
-  fmt.Printf("Input:  %s %s\n", s, t)
-  fmt.Printf("Output: %t\n", backspaceCompare(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "y#fo##f", "y#f#o##f", true
-  fmt.Printf("Input:  %s %s\n", s, t)
-  fmt.Printf("Output: %t\n", backspaceCompare(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-}
 
 // T: O(n + m)
 // M: O(1)

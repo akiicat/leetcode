@@ -1,37 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, k, o := []int{3,1,4,1,5}, 2, 2
-  fmt.Printf("Input:  %v %d\n", i, k)
-  fmt.Printf("Output: %d\n", findPairs(i, k))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, k, o = []int{1,2,3,4,5}, 1, 4
-  fmt.Printf("Input:  %v %d\n", i, k)
-  fmt.Printf("Output: %d\n", findPairs(i, k))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, k, o = []int{1,3,1,5,4}, 0, 1
-  fmt.Printf("Input:  %v %d\n", i, k)
-  fmt.Printf("Output: %d\n", findPairs(i, k))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, k, o = []int{1,1,1,1,1}, 0, 1
-  fmt.Printf("Input:  %v %d\n", i, k)
-  fmt.Printf("Output: %d\n", findPairs(i, k))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, k, o = []int{-1,0,1,-2,0}, 2, 2
-  fmt.Printf("Input:  %v %d\n", i, k)
-  fmt.Printf("Output: %d\n", findPairs(i, k))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, k, o = []int{-1,0,1,-2,0}, -1, 0
-  fmt.Printf("Input:  %v %d\n", i, k)
-  fmt.Printf("Output: %d\n", findPairs(i, k))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(n)

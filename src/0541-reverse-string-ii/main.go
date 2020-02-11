@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, k, o := "abcdefg", 2, "bacdfeg"
-  fmt.Printf("Input:  %s %d\n", i, k)
-  fmt.Printf("Output: %s\n", reverseStr(i, k))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, k, o = "a", 2, "a"
-  fmt.Printf("Input:  %s %d\n", i, k)
-  fmt.Printf("Output: %s\n", reverseStr(i, k))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, k, o = "abcdefg", 3, "cbadefg"
-  fmt.Printf("Input:  %s %d\n", i, k)
-  fmt.Printf("Output: %s\n", reverseStr(i, k))
-  fmt.Printf("Expect: %s\n", o)
-}
 
 // T: O(n) n is the length of the string
 // M: O(1)

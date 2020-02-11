@@ -1,27 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  s, t, o := "egg", "add", true
-  fmt.Printf("Input:  %s, %s\n", s, t)
-  fmt.Printf("Output: %t\n", isIsomorphic(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "foo", "bar", false
-  fmt.Printf("Input:  %s, %s\n", s, t)
-  fmt.Printf("Output: %t\n", isIsomorphic(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "paper", "title", true
-  fmt.Printf("Input:  %s, %s\n", s, t)
-  fmt.Printf("Output: %t\n", isIsomorphic(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "ab", "aa", false
-  fmt.Printf("Input:  %s, %s\n", s, t)
-  fmt.Printf("Output: %t\n", isIsomorphic(s, t))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // leetcode 290.
 // T: O(n)

@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, r, c, o := [][]int{[]int{1,2}, []int{3,4}}, 1, 4, [][]int{[]int{1,2,3,4}}
-  fmt.Printf("Input:  %v %d %d\n", i, r, c)
-  fmt.Printf("Output: %d\n", matrixReshape(i, r, c))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, r, c, o = [][]int{[]int{1,2}, []int{3,4}}, 2, 4, [][]int{[]int{1,2}, []int{3,4}}
-  fmt.Printf("Input:  %v %d %d\n", i, r, c)
-  fmt.Printf("Output: %d\n", matrixReshape(i, r, c))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(m*n)
 // M: O(m*n)

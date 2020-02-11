@@ -1,7 +1,6 @@
 package main
-
-import . "main/pkg/testing_helper"
 import "testing"
+import . "main/pkg/testing_helper"
 
 func TestCountCharacters(t *testing.T) {
   w, c, o := []string{"cat","bt","hat","tree"}, "atach", 6

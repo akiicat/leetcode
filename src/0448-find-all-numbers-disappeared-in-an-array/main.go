@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{4,3,2,7,8,2,3,1}, []int{5,6}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", findDisappearedNumbers(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{4,7,2,7,8,8,3,1}, []int{5,6}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", findDisappearedNumbers(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(1)

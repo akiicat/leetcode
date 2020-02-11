@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{1,2,2,4}, []int{2,3}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", findErrorNums(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = []int{4,2,2,1}, []int{2,3}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", findErrorNums(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = []int{2,2}, []int{2,1}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", findErrorNums(i))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // https://leetcode.com/articles/set-mismatch/
 // T: O(n)

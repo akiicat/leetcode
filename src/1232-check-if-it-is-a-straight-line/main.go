@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := [][]int{[]int{1,2},[]int{2,3},[]int{3,4},[]int{4,5},[]int{5,6},[]int{6,7}}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", checkStraightLine(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = [][]int{[]int{1,1},[]int{2,2},[]int{3,4},[]int{4,5},[]int{5,6},[]int{7,7}}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", checkStraightLine(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1)

@@ -1,12 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := [][]int{[]int{0,0},[]int{0,1},[]int{1,0},[]int{0,2},[]int{2,0}}, 2.0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %f\n", largestTriangleArea(i))
-  fmt.Printf("Expect: %f\n", o)
-}
 
 // T: O(n*3)
 // M: O(1)

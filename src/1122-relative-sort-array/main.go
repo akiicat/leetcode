@@ -1,18 +1,5 @@
 package main
-import "fmt"
 import "sort"
-
-func main() {
-  i1, i2, o := []int{2,3,1,3,2,4,6,7,9,2,19}, []int{2,1,4,3,9,6}, []int{2,2,2,1,4,3,3,9,6,7,19}
-  fmt.Printf("Input:  %v, %v\n", i1, i2)
-  fmt.Printf("Output: %v\n", relativeSortArray(i1, i2))
-  fmt.Printf("Expect: %v\n", o)
-
-  i1, i2, o = []int{28,6,22,8,44,17}, []int{22,28,8,6}, []int{22,28,8,6,17,44}
-  fmt.Printf("Input:  %v, %v\n", i1, i2)
-  fmt.Printf("Output: %v\n", relativeSortArray(i1, i2))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n*log(n))
 // M: O(n)

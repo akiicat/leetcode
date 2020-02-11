@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := [][]int{[]int{1,2,3,4},[]int{5,1,2,3},[]int{9,5,1,2}}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", isToeplitzMatrix(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = [][]int{[]int{1,2},[]int{2,2}}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", isToeplitzMatrix(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n * m) n, m are the number of rows and columns in matrix
 // M: O(1)

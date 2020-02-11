@@ -1,42 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{3,2,1}, 1
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", thirdMax(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{1,2}, 2
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", thirdMax(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{2,2,3,1}, 1
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", thirdMax(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{5,2,2}, 5
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", thirdMax(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{-2147483648,1,1}, 1
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", thirdMax(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{1,2,-2147483648}, -2147483648
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", thirdMax(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{1,-2147483648,2}, -2147483648
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", thirdMax(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // leetcode 506. 628.
 // T: O(n)

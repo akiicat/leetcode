@@ -1,5 +1,4 @@
 package main
-import "fmt"
 import . "main/pkg/tree_node"
 
 // type TreeNode struct {
@@ -7,28 +6,6 @@ import . "main/pkg/tree_node"
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-
-func main() {
-  s, t, o := NewTreeNode("3,4,5,1,2"), NewTreeNode(""), false
-  fmt.Printf("Input:  %s %s\n", s.ToStr(), t.ToStr())
-  fmt.Printf("Output: %t\n", isSubtree(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = NewTreeNode("3,4,5,1,2"), NewTreeNode("4,1,2"), true
-  fmt.Printf("Input:  %s %s\n", s.ToStr(), t.ToStr())
-  fmt.Printf("Output: %t\n", isSubtree(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = NewTreeNode("3,4,5,1,2,null,null,0"), NewTreeNode("4,1,2"), false
-  fmt.Printf("Input:  %s %s\n", s.ToStr(), t.ToStr())
-  fmt.Printf("Output: %t\n", isSubtree(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = NewTreeNode("1,1"), NewTreeNode("1"), true
-  fmt.Printf("Input:  %s %s\n", s.ToStr(), t.ToStr())
-  fmt.Printf("Output: %t\n", isSubtree(s, t))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // leetcode 100.
 // T: O(m*n)

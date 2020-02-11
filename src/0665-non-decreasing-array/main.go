@@ -1,27 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{4,2,3}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", checkPossibility(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{4,2,1}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", checkPossibility(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{3,4,2,3}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", checkPossibility(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{2,3,3,2,4}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", checkPossibility(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1)

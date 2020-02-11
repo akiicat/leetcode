@@ -1,23 +1,5 @@
 package main
-import "fmt"
 import "math/bits"
-
-func main() {
-  i, o := 11, 3
-  fmt.Printf("Input:  %032b\n", i)
-  fmt.Printf("Output: %d\n", hammingWeight(11))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 128, 1
-  fmt.Printf("Input:  %032b\n", i)
-  fmt.Printf("Output: %d\n", hammingWeight(11))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 4294967293, 3
-  fmt.Printf("Input:  %032b\n", i)
-  fmt.Printf("Output: %d\n", hammingWeight(11))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(1) 32 times for every 32bit number no matter how large the number is
 // M: O(1)

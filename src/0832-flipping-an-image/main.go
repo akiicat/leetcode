@@ -1,37 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := [][]int{
-    []int{1,1,0},
-    []int{1,0,1},
-    []int{0,0,0},
-  },
-  [][]int{
-    []int{1,0,0},
-    []int{0,1,0},
-    []int{1,1,1},
-  }
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", flipAndInvertImage(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = [][]int{
-    []int{1,1,0,0},
-    []int{1,0,0,1},
-    []int{0,1,1,1},
-    []int{1,0,1,0},
-  },
-  [][]int{
-    []int{1,1,0,0},
-    []int{0,1,1,0},
-    []int{0,0,0,1},
-    []int{1,0,1,0},
-  }
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", flipAndInvertImage(i))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n ** 2)
 // M: O(1)

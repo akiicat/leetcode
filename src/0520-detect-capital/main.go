@@ -1,23 +1,5 @@
 package main
-import "fmt"
 import "strings"
-
-func main() {
-  i, o := "USA", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", detectCapitalUse(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "FlaG", false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", detectCapitalUse(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "Flag", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", detectCapitalUse(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1)

@@ -1,28 +1,5 @@
 package main
-import "fmt"
 import "strconv"
-
-func main() {
-  i, o := "10#11#12", "jkab"
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %s\n", freqAlphabets(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = "1326#", "acz"
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %s\n", freqAlphabets(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = "25#", "y"
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %s\n", freqAlphabets(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = "12345678910#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#", "abcdefghijklmnopqrstuvwxyz"
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %s\n", freqAlphabets(i))
-  fmt.Printf("Expect: %s\n", o)
-}
 
 // T: O(n)
 // M: O(1)

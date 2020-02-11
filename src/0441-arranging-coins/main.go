@@ -1,28 +1,5 @@
 package main
-import "fmt"
 import "math"
-
-func main() {
-  i, o := 0, 0
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", arrangeCoins(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 1, 1
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", arrangeCoins(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 5, 2
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", arrangeCoins(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 8, 3
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", arrangeCoins(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(log(n))
 // M: O(1)

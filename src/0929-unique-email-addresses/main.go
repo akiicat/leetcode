@@ -1,18 +1,5 @@
 package main
-import "fmt"
 import "strings"
-
-func main() {
-  i, o := []string{"test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"}, 2
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", numUniqueEmails(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []string{"test.email+alex@leetcode.com", "test.email@leetcode.com"}, 1
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", numUniqueEmails(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n * l)
 // M: O(n * l)

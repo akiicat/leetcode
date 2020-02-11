@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{1,0,0}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", isOneBitCharacter(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{1,1,1,0}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", isOneBitCharacter(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{0}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", isOneBitCharacter(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // https://leetcode.com/articles/1-bit-and-2-bit-characters/
 // T: O(n)
@@ -32,7 +14,6 @@ func isOneBitCharacter(bits []int) bool {
   for i < len(bits) - 1 {
     i += bits[i] + 1
   }
-  fmt.Println(i)
 
   return i == len(bits) - 1
 }

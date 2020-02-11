@@ -1,5 +1,4 @@
 package main
-import "fmt"
 import . "main/pkg/tree_node"
 
 // type TreeNode struct {
@@ -7,13 +6,6 @@ import . "main/pkg/tree_node"
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-
-func main() {
-  i, o := NewTreeNode("3,9,20,null,null,15,7"), 3
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %d\n", maxDepth(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // leetcode 543.
 // T: O(n)

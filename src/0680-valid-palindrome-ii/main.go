@@ -1,32 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := "aba", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", validPalindrome(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "abca", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", validPalindrome(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "abbca", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", validPalindrome(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "abcbca", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", validPalindrome(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "abc", false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", validPalindrome(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1)

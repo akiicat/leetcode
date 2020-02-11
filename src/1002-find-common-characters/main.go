@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []string{"bella","label","roller"}, []string{"e","l","l"}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", commonChars(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = []string{"cool","lock","cook"}, []string{"c","o"}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", commonChars(i))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n) n for all of chars
 // M: O(1)

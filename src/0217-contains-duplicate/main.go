@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{1,2,3,1}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", containsDuplicate(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{1,2,3,4}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", containsDuplicate(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{1,1,1,3,3,4,3,2,4,2}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", containsDuplicate(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // leetcode 219.
 // T: O(n)

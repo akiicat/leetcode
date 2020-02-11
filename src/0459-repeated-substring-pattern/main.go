@@ -1,54 +1,6 @@
 package main
-import "fmt"
 import "math"
 import "strings"
-
-func main() {
-  i, o := "abab", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", repeatedSubstringPattern(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "aba", false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", repeatedSubstringPattern(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "abcabcabcabc", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", repeatedSubstringPattern(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "ababba", false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", repeatedSubstringPattern(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "aabaaba", false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", repeatedSubstringPattern(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "bb", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", repeatedSubstringPattern(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "ababababab", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", repeatedSubstringPattern(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "abaababaab", true
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", repeatedSubstringPattern(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "ab", false
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %t\n", repeatedSubstringPattern(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // leetcode 28. 796.
 // T: O(log(n))

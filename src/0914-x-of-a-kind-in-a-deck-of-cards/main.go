@@ -1,47 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{1,2,3,4,4,3,2,1}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", hasGroupsSizeX(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{1,1,1,2,2,2,3,3}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", hasGroupsSizeX(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{1}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", hasGroupsSizeX(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{1,1}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", hasGroupsSizeX(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{0,0,0,1,1,1,2,2,2}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", hasGroupsSizeX(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{1,1,2,2,2,2}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", hasGroupsSizeX(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{1,1,1,1,2,2,2,2,2,2}, true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", hasGroupsSizeX(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = []int{1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3}, false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", hasGroupsSizeX(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n * log(n) ** 2)
 // M: O(n)

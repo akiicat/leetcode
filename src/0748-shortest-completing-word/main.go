@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, licensePlate, o := []string{"step", "steps", "stripe", "stepple"}, "1s3 PSt", "steps"
-  fmt.Printf("Input:  %s, %v\n", licensePlate, i)
-  fmt.Printf("Output: %s\n", shortestCompletingWord(licensePlate, i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, licensePlate, o = []string{"looks", "pest", "stew", "show"}, "1s3 456", "pest"
-  fmt.Printf("Input:  %s, %v\n", licensePlate, i)
-  fmt.Printf("Output: %s\n", shortestCompletingWord(licensePlate, i))
-  fmt.Printf("Expect: %s\n", o)
-}
 
 // T: O(n)
 // M: O(1)

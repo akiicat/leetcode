@@ -1,23 +1,5 @@
 package main
-import "fmt"
 import "math/bits"
-
-func main() {
-  l, r, o := 6, 10, 4
-  fmt.Printf("Input:  %d, %d\n", l, r)
-  fmt.Printf("Output: %d\n", countPrimeSetBits(l, r))
-  fmt.Printf("Expect: %d\n", o)
-
-  l, r, o = 10, 15, 5
-  fmt.Printf("Input:  %d, %d\n", l, r)
-  fmt.Printf("Output: %d\n", countPrimeSetBits(l, r))
-  fmt.Printf("Expect: %d\n", o)
-
-  l, r, o = 842, 888, 23
-  fmt.Printf("Input:  %d, %d\n", l, r)
-  fmt.Printf("Output: %d\n", countPrimeSetBits(l, r))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(1)

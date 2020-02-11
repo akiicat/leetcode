@@ -1,12 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{3,1,2,4}, []int{2,4,3,1}
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", sortArrayByParity(i))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // leetcode 922.
 // T: O(n)

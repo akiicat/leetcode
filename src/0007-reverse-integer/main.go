@@ -1,27 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := 123, 321
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", reverse(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = -123, -321
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", reverse(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 120, 21
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", reverse(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 1534236469, 0
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", reverse(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(1)

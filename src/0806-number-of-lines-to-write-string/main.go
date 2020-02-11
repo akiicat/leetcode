@@ -1,12 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  widths, S, o := []int{10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10}, "abcdefghijklmnopqrstuvwxyz", []int{3,60}
-  fmt.Printf("Input:  %v, %s\n", widths, S)
-  fmt.Printf("Output: %v\n", numberOfLines(widths, S))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n) n is the length of S
 // M: O(1)

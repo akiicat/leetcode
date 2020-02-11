@@ -1,23 +1,5 @@
 package main
-import "fmt"
 import "strings"
-
-func main() {
-  i, o := "PPALLP", true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", checkRecord(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "PPALLL", false
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", checkRecord(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = "LALL", true
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %t\n", checkRecord(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1)

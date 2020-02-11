@@ -1,27 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i1, i2, o := "0", "0", "0"
-  fmt.Printf("Input:  %s, %s\n", i1, i2)
-  fmt.Printf("Output: %s\n", addStrings(i1, i2))
-  fmt.Printf("Expect: %s\n", o)
-
-  i1, i2, o = "10", "90", "100"
-  fmt.Printf("Input:  %s, %s\n", i1, i2)
-  fmt.Printf("Output: %s\n", addStrings(i1, i2))
-  fmt.Printf("Expect: %s\n", o)
-
-  i1, i2, o = "9", "99", "108"
-  fmt.Printf("Input:  %s, %s\n", i1, i2)
-  fmt.Printf("Output: %s\n", addStrings(i1, i2))
-  fmt.Printf("Expect: %s\n", o)
-
-  i1, i2, o = "5432", "54", "5486"
-  fmt.Printf("Input:  %s, %s\n", i1, i2)
-  fmt.Printf("Output: %s\n", addStrings(i1, i2))
-  fmt.Printf("Expect: %s\n", o)
-}
 
 // T: O(n) n is the max of characters length in all strings.
 // M: O(n)

@@ -1,5 +1,4 @@
 package main
-
 import "testing"
 import . "main/pkg/testing_helper"
 import . "main/pkg/list_node"

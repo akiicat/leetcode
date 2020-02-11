@@ -1,32 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{1,2,3}, 6
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", maximumProduct(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{1,2,3,4}, 24
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", maximumProduct(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{-1,2,-3,4}, 12
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", maximumProduct(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{-1,-2,-3}, -6
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", maximumProduct(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{-4,-3,-2,-1,60}, 720
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", maximumProduct(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // leetcode 414. 506.
 // T: O(n)

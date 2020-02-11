@@ -1,43 +1,5 @@
 package main
-import "fmt"
 import "math"
-
-func main() {
-  i, o := 0, 0
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", mySqrtBinarySearch(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 1, 1
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", mySqrtBinarySearch(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 4, 2
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", mySqrtBinarySearch(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 8, 2
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", mySqrtBinarySearch(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 9, 3
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", mySqrtBinarySearch(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 10, 3
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", mySqrtBinarySearch(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 36, 6
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", mySqrtBinarySearch(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(log(n))
 // M: O(1)

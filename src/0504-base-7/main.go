@@ -1,23 +1,5 @@
 package main
-import "fmt"
 import "strconv"
-
-func main() {
-  i, o := 100, "202"
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", convertToBase7(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = 99, "201"
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", convertToBase7(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = -7, "-10"
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", convertToBase7(i))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n)
 // M: O(1)

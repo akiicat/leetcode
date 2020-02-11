@@ -1,48 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := [][]int{
-    []int{2},
-  }, 10
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", surfaceArea(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = [][]int{
-    []int{1,2},
-    []int{3,4},
-  }, 34
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", surfaceArea(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = [][]int{
-    []int{1,0},
-    []int{0,2},
-  }, 16
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", surfaceArea(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = [][]int{
-    []int{1,1,1},
-    []int{1,0,1},
-    []int{1,1,1},
-  }, 32
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", surfaceArea(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = [][]int{
-    []int{2,2,2},
-    []int{2,1,2},
-    []int{2,2,2},
-  }, 46
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", surfaceArea(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n ** 2)
 // M: O(1)

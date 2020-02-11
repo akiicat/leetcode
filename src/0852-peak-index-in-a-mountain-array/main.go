@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{0,1,0}, 1
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", peakIndexInMountainArray(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{0,2,1,0}, 1
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", peakIndexInMountainArray(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{40,48,61,75,100,99,98,39,30,10}, 4
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", peakIndexInMountainArray(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(log(n))
 // M: O(1)

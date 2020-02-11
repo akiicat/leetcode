@@ -1,9 +1,10 @@
 package testing_helper
 
-// import . "main/pkg/tree_node"
-import . "main/pkg/list_node"
 import "fmt"
+import "sort"
 import "testing"
+import . "main/pkg/list_node"
+import . "main/pkg/tree_node"
 
 type Value struct {
   Val string
@@ -25,13 +26,35 @@ func S(i ...interface{}) *Value {
   }
 
   switch v := i[0].(type) {
+  case []interface{}:
+    return &Value{Val: fmt.Sprintf("%v", v)}
   case []string:
     return &Value{Val: fmt.Sprintf("%v", v)}
   case string:
     return &Value{Val: fmt.Sprintf("%s", v)}
+  case [][]int:
+    return &Value{Val: fmt.Sprintf("%v", v)}
+  case []int:
+    return &Value{Val: fmt.Sprintf("%v", v)}
   case int:
     return &Value{Val: fmt.Sprintf("%d", v)}
+  case int32:
+    return &Value{Val: fmt.Sprintf("%d", v)}
+  case uint32:
+    return &Value{Val: fmt.Sprintf("%d(%032b)", v, v)}
+  case []byte: // []uint8
+    return &Value{Val: fmt.Sprintf("%s", v)}
+  case byte: // uint8
+    return &Value{Val: fmt.Sprintf("%c", v)}
+  case []float64:
+    return &Value{Val: fmt.Sprintf("%v", v)}
+  case float64:
+    return &Value{Val: fmt.Sprintf("%f", v)}
+  case bool:
+    return &Value{Val: fmt.Sprintf("%t", v)}
   case *ListNode:
+    return &Value{Val: fmt.Sprintf("%s", v.ToStr())}
+  case *TreeNode:
     return &Value{Val: fmt.Sprintf("%s", v.ToStr())}
   default:
     return &Value{Err: fmt.Errorf("failed at type %T", v)}
@@ -53,5 +76,10 @@ func T(t *testing.T, i, r, o *Value) {
   if r.Val != o.Val {
     t.Errorf("\nInput:  %s\nOutput: %s\nExpect: %s\n", i.Val, r.Val, o.Val)
   }
+}
+
+func SortStr(strs []string) []string {
+  sort.Strings(strs)
+  return strs
 }
 

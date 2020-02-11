@@ -1,18 +1,5 @@
 package main
-import "fmt"
 import "strconv"
-
-func main() {
-  i, o := []string{"5","2","C","D","+"}, 30
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", calPoints(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = []string{"5","-2","4","C","D","9","+","+"}, 27
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %v\n", calPoints(i))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n)
 // M: O(n)

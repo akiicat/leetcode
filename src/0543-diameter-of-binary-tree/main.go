@@ -1,5 +1,4 @@
 package main
-import "fmt"
 import . "main/pkg/tree_node"
 
 // type TreeNode struct {
@@ -7,23 +6,6 @@ import . "main/pkg/tree_node"
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-
-func main() {
-  i, o := NewTreeNode("1,2,3,4,5"), 3
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %d\n", diameterOfBinaryTree(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = NewTreeNode(""), 0
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %d\n", diameterOfBinaryTree(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = NewTreeNode("4,-7,-3,null,null,-9,-3,9,-7,-4,null,6,null,-6,-6,null,null,0,6,5,null,9,null,null,-1,-4,null,null,null,-2"), 8
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %d\n", diameterOfBinaryTree(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // leetcode 104.
 // T: O(n)

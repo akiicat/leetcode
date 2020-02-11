@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{2,2,1}, 1
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", singleNumber(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{4,1,2,1,2}, 4
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", singleNumber(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(1)

@@ -1,12 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  s, c, o := "loveleetcode", byte('e'), []int{3,2,1,0,1,0,0,1,2,2,1,0}
-  fmt.Printf("Input:  %s, %c\n", s, c)
-  fmt.Printf("Output: %v\n", shortestToChar(s, c))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n)
 // M: O(1)

@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := "nlaebolko", 1
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", maxNumberOfBalloons(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "loonbalxballpoon", 2
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", maxNumberOfBalloons(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "leetcode", 0
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", maxNumberOfBalloons(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(1) 26 chars

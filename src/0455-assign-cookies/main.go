@@ -1,33 +1,5 @@
 package main
-import "fmt"
 import "sort"
-
-func main() {
-  i1, i2, o := []int{1,2,3}, []int{1,1}, 1
-  fmt.Printf("Input:  %v %v\n", i1, i2)
-  fmt.Printf("Output: %d\n", findContentChildren(i1, i2))
-  fmt.Printf("Expect: %d\n", o)
-
-  i1, i2, o = []int{1,2}, []int{1,2,3}, 2
-  fmt.Printf("Input:  %v %v\n", i1, i2)
-  fmt.Printf("Output: %d\n", findContentChildren(i1, i2))
-  fmt.Printf("Expect: %d\n", o)
-
-  i1, i2, o = []int{1,2}, []int{1,3}, 2
-  fmt.Printf("Input:  %v %v\n", i1, i2)
-  fmt.Printf("Output: %d\n", findContentChildren(i1, i2))
-  fmt.Printf("Expect: %d\n", o)
-
-  i1, i2, o = []int{1,2,3}, []int{}, 0
-  fmt.Printf("Input:  %v %v\n", i1, i2)
-  fmt.Printf("Output: %d\n", findContentChildren(i1, i2))
-  fmt.Printf("Expect: %d\n", o)
-
-  i1, i2, o = []int{1,2,3}, []int{3}, 1
-  fmt.Printf("Input:  %v %v\n", i1, i2)
-  fmt.Printf("Output: %d\n", findContentChildren(i1, i2))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n*log(n)) for sort
 // M: O(1)

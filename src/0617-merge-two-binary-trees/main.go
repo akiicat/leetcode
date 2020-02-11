@@ -1,5 +1,4 @@
 package main
-import "fmt"
 import . "main/pkg/tree_node"
 
 // type TreeNode struct {
@@ -7,13 +6,6 @@ import . "main/pkg/tree_node"
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-
-func main() {
-  t1, t2, o := NewTreeNode("1,3,2,5"), NewTreeNode("2,1,3,null,4,null,7"), NewTreeNode("3,4,5,5,4,null,7")
-  fmt.Printf("Input:  %s, %s\n", t1.ToStr(), t2.ToStr())
-  fmt.Printf("Output: %s\n", mergeTrees(t1, t2).ToStr())
-  fmt.Printf("Expect: %s\n", o.ToStr())
-}
 
 // T: O(n)
 // M: O(h)

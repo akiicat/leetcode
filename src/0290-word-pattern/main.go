@@ -1,33 +1,5 @@
 package main
-import "fmt"
 import "strings"
-
-func main() {
-  s, t, o := "abba", "dog cat cat dog", true
-  fmt.Printf("Input:  %s, %s\n", s, t)
-  fmt.Printf("Output: %t\n", wordPattern(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "abba", "dog cat cat fish", false
-  fmt.Printf("Input:  %s, %s\n", s, t)
-  fmt.Printf("Output: %t\n", wordPattern(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "aaaa", "dog cat cat dog", false
-  fmt.Printf("Input:  %s, %s\n", s, t)
-  fmt.Printf("Output: %t\n", wordPattern(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "abba", "dog dog dog dog", false
-  fmt.Printf("Input:  %s, %s\n", s, t)
-  fmt.Printf("Output: %t\n", wordPattern(s, t))
-  fmt.Printf("Expect: %t\n", o)
-
-  s, t, o = "aaa", "dog dog dog dog", false
-  fmt.Printf("Input:  %s, %s\n", s, t)
-  fmt.Printf("Output: %t\n", wordPattern(s, t))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // leetcode 205.
 // T: O(n)

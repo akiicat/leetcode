@@ -1,5 +1,4 @@
 package main
-import "fmt"
 import . "main/pkg/tree_node"
 
 // type TreeNode struct {
@@ -7,13 +6,6 @@ import . "main/pkg/tree_node"
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-
-func main() {
-  i, o := NewTreeNode("5,2,13"), NewTreeNode("18,20,13")
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %s\n", convertBST(i).ToStr())
-  fmt.Printf("Expect: %s\n", o.ToStr())
-}
 
 // T: O(n)
 // M: O(h)

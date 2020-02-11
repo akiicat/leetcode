@@ -1,66 +1,20 @@
 package main
-import "fmt"
+import . "main/pkg/tree_node"
 
-type TreeNode struct {
-    Val int
-    Left *TreeNode
-    Right *TreeNode
-}
-
-func main() {
-  // 10,5,15,3,7,null,18
-  //                10
-  //              /    \
-  //           5         15
-  //          / \      /    \
-  //        3    7    null  18
-  i := &TreeNode{Val: 10}
-  i.Left = &TreeNode{Val: 5}
-  i.Right = &TreeNode{Val: 15}
-  i.Left.Left = &TreeNode{Val: 3}
-  i.Left.Right = &TreeNode{Val: 7}
-  i.Right.Left = nil
-  i.Right.Right = &TreeNode{Val: 18}
-  L, R, o := 7, 15, 32
-  fmt.Printf("Input:  %s, %d, %d\n", i, L, R)
-  fmt.Printf("Output: %d\n", rangeSumBST(i, L, R))
-  fmt.Printf("Expect: %d\n", o)
-
-  // 10,5,15,3,7,13,18,1,null,6
-  //                  10
-  //                /    \
-  //             5         15
-  //            / \      /    \
-  //        3       7    13    18
-  //       / \     /
-  //      1  null 6
-  i = &TreeNode{Val: 10}
-  i.Left = &TreeNode{Val: 5}
-  i.Right = &TreeNode{Val: 15}
-  i.Left.Left = &TreeNode{Val: 3}
-  i.Left.Right = &TreeNode{Val: 7}
-  i.Right.Left = &TreeNode{Val: 13}
-  i.Right.Right = &TreeNode{Val: 18}
-  i.Left.Left.Left = &TreeNode{Val: 1}
-  i.Left.Left.Right = nil
-  i.Left.Right.Left = &TreeNode{Val: 6}
-  L, R, o = 6, 10, 23
-  fmt.Printf("Input:  %s, %d, %d\n", i, L, R)
-  fmt.Printf("Output: %d\n", rangeSumBST(i, L, R))
-  fmt.Printf("Expect: %d\n", o)
-}
+// type TreeNode struct {
+//     Val int
+//     Left *TreeNode
+//     Right *TreeNode
+// }
 
 // T: O(n)
 // M: O(1)
 // -- start --
 
-func rangeSumBST(root *TreeNode, L int, R int) int {
-  return rangeSumBSTStackTopBottom(root, L, R)
-}
-
+// Top Bottom
 // T: O(n)
 // M: O(h)
-func rangeSumBSTStackTopBottom(root *TreeNode, L int, R int) int {
+func rangeSumBST(root *TreeNode, L int, R int) int {
   var sum int
   var node *TreeNode
 

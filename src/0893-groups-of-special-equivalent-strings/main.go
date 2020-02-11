@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []string{"abcd","cdab","cbad","xyzz","zzxy","zzyx"}, 3
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", numSpecialEquivGroups(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []string{"abc","acb","bac","bca","cab","cba"}, 3
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", numSpecialEquivGroups(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(n)

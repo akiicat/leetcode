@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []int{7,1,5,3,6,4}, 5
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", maxProfit(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{7,6,4,3,1}, 0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", maxProfit(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []int{}, 0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", maxProfit(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // leetcode 53.
 // https://leetcode.com/articles/best-time-to-buy-and-sell-stock/
@@ -24,13 +6,10 @@ func main() {
 // M: O(1)
 // -- start --
 
-func maxProfit(prices []int) int {
-  return maxProfitOnePass(prices []int)
-}
-
+// OnePass
 // T: O(n)
 // M: O(1)
-func maxProfitOnePass(prices []int) int {
+func maxProfit(prices []int) int {
   m := 0 // max
   low := 1<<31
 

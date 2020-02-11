@@ -1,18 +1,5 @@
 package main
-import "fmt"
 import "strings"
-
-func main() {
-  p, b, o := "Bob hit a ball, the hit BALL flew far after it was hit.", []string{"hit"}, "ball"
-  fmt.Printf("Input:  %s, %v\n", p, b)
-  fmt.Printf("Output: %s\n", mostCommonWord(p, b))
-  fmt.Printf("Expect: %s\n", o)
-
-  p, b, o = "Bob", []string{}, "bob"
-  fmt.Printf("Input:  %s, %v\n", p, b)
-  fmt.Printf("Output: %s\n", mostCommonWord(p, b))
-  fmt.Printf("Expect: %s\n", o)
-}
 
 // T: O(n + m)
 // M: O(n + m)

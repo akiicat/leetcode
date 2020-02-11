@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := 5, 2
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", findComplement(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 6, 1
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", findComplement(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 1, 0
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", findComplement(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(1) max 32 times
 // M: O(1)

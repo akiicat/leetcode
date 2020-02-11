@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := 10, 4
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", countPrimes(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = 20, 8
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %d\n", countPrimes(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(n)

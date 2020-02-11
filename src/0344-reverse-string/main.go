@@ -1,13 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []byte{'h','e','l','l','o'}, []byte{'o','l','l','e','h'}
-  fmt.Printf("Input:  %v\n", i)
-  reverseString(i)
-  fmt.Printf("Output: %v\n", i)
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n)
 // M: O(1)

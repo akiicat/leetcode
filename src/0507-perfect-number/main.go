@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := 28, true
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", checkPerfectNumber(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = 3, false
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", checkPerfectNumber(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = 0, false
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", checkPerfectNumber(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(log(n))
 // M: O(log(n))
@@ -28,7 +10,7 @@ func main() {
 func checkPerfectNumber(num int) bool {
   primes := []int{2,3,5,7,13,17,19,31}
   for _, prime := range primes {
-    if pn(prime) == num {
+    if Pn(prime) == num {
       return true
     }
   }
@@ -63,6 +45,10 @@ func checkPerfectNumberSqrt(num int) bool {
 // T: O(n)
 // M: O(1)
 func checkPerfectNumberLinear(num int) bool {
+  if num == 0 {
+    return false
+  }
+
   sum := 0
 
   for i := 1; i < num; i++ {

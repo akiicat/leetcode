@@ -1,10 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  fmt.Printf("Input:  %v\nOutput: %d\nExpect: %d\n", []int{1, 2}, getSum(1, 2), 3)
-  fmt.Printf("Input:  %v\nOutput: %d\nExpect: %d\n", []int{2, 4}, getSum(2, 4), 6)
-}
 
 // T: O(1)
 // M: O(1)

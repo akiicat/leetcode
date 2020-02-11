@@ -1,32 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  a, b, o := "ab", "ba", true
-  fmt.Printf("Input:  %s %s\n", a, b)
-  fmt.Printf("Output: %t\n", buddyStrings(a, b))
-  fmt.Printf("Expect: %t\n", o)
-
-  a, b, o = "ab", "ab", false
-  fmt.Printf("Input:  %s %s\n", a, b)
-  fmt.Printf("Output: %t\n", buddyStrings(a, b))
-  fmt.Printf("Expect: %t\n", o)
-
-  a, b, o = "aa", "aa", true
-  fmt.Printf("Input:  %s %s\n", a, b)
-  fmt.Printf("Output: %t\n", buddyStrings(a, b))
-  fmt.Printf("Expect: %t\n", o)
-
-  a, b, o = "abcd", "badc", false
-  fmt.Printf("Input:  %s %s\n", a, b)
-  fmt.Printf("Output: %t\n", buddyStrings(a, b))
-  fmt.Printf("Expect: %t\n", o)
-
-  a, b, o = "aaaaaaabc", "aaaaaaacb", true
-  fmt.Printf("Input:  %s %s\n", a, b)
-  fmt.Printf("Output: %t\n", buddyStrings(a, b))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n)
 // M: O(1) for 26

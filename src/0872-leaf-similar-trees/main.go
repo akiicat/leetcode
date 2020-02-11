@@ -1,5 +1,4 @@
 package main
-import "fmt"
 import . "main/pkg/tree_node"
 
 // type TreeNode struct {
@@ -7,13 +6,6 @@ import . "main/pkg/tree_node"
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-
-func main() {
-  i1, i2, o := NewTreeNode("3,5,1,6,2,9,8,null,null,7,4"), NewTreeNode("3,5,1,6,7,4,2,null,null,null,null,null,null,9,8"), true
-  fmt.Printf("Input:  %s %s\n", i1.ToStr(), i2.ToStr())
-  fmt.Printf("Output: %t\n", leafSimilar(i1, i2))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(n + m) n, m are the length of the given trees.
 // M: O(n + m)

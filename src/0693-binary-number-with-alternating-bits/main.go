@@ -1,16 +1,5 @@
 package main
-import "fmt"
 import "math/bits"
-
-func main() {
-  fmt.Printf("Input:  %d\nOutput: %t\nExpect: %t\n", 0, hasAlternatingBits(0), true)
-  fmt.Printf("Input:  %d\nOutput: %t\nExpect: %t\n", 1, hasAlternatingBits(1), true)
-  fmt.Printf("Input:  %d\nOutput: %t\nExpect: %t\n", 2, hasAlternatingBits(2), true)
-  fmt.Printf("Input:  %d\nOutput: %t\nExpect: %t\n", 3, hasAlternatingBits(3), false)
-  fmt.Printf("Input:  %d\nOutput: %t\nExpect: %t\n", 4, hasAlternatingBits(4), false)
-  fmt.Printf("Input:  %d\nOutput: %t\nExpect: %t\n", 5, hasAlternatingBits(5), true)
-  fmt.Printf("Input:  %d\nOutput: %t\nExpect: %t\n", 1431655765, hasAlternatingBits(1431655765), true)
-}
 
 // T: O(1)
 // M: O(1)

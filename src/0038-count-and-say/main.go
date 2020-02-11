@@ -2,33 +2,6 @@ package main
 import "fmt"
 import "bytes"
 
-func main() {
-  i, o := 1, "1"
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %s\n", countAndSay(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = 2, "11"
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %s\n", countAndSay(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = 3, "21"
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %s\n", countAndSay(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = 4, "1211"
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %s\n", countAndSay(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = 5, "111221"
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %s\n", countAndSay(i))
-  fmt.Printf("Expect: %s\n", o)
-}
-
 // T: O(2^n)
 // M: O(n)
 // -- start --

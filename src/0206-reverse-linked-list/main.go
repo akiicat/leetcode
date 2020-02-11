@@ -1,18 +1,5 @@
 package main
-import "fmt"
 import . "main/pkg/list_node"
-
-// type ListNode struct {
-//   Val int
-//   Next *ListNode
-// }
-
-func main() {
-  i, o := NewListNode([]int{1,2,3,4,5}), NewListNode([]int{5,4,3,2,1})
-  fmt.Printf("Input:  %s\n", i.ToStr())
-  fmt.Printf("Output: %s\n", reverseList(i).ToStr())
-  fmt.Printf("Expect: %s\n", o.ToStr())
-}
 
 // T: O(n)
 // M: O(1)

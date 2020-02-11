@@ -1,48 +1,14 @@
 package main
-import "fmt"
-
-func main() {
-  strs, o := []string{"flower","flow","flight"}, "fl"
-  fmt.Printf("Input:  %v\n", strs)
-  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
-  fmt.Printf("Expect: %s\n", o)
-
-  strs, o = []string{"a","ac"}, "a"
-  fmt.Printf("Input:  %v\n", strs)
-  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
-  fmt.Printf("Expect: %s\n", o)
-
-  strs, o = []string{"aa","a"}, "a"
-  fmt.Printf("Input:  %v\n", strs)
-  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
-  fmt.Printf("Expect: %s\n", o)
-
-  strs, o = []string{"dog","racecar","car"}, ""
-  fmt.Printf("Input:  %v\n", strs)
-  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
-  fmt.Printf("Expect: %s\n", o)
-
-  strs, o = []string{"","b"}, ""
-  fmt.Printf("Input:  %v\n", strs)
-  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
-  fmt.Printf("Expect: %s\n", o)
-
-  strs, o = []string{}, ""
-  fmt.Printf("Input:  %v\n", strs)
-  fmt.Printf("Output: %s\n", longestCommonPrefix(strs))
-  fmt.Printf("Expect: %s\n", o)
-}
 
 // https://leetcode.com/articles/longest-common-prefix/
 // T: O(n) n is the sum of all characters in all strings.
 // M: O(1)
 // -- start --
 
+// BinarySearch
+// T: O(n)
+// M: O(1)
 func longestCommonPrefix(strs []string) string {
-  return longestCommonPrefixBinarySearch(strs)
-}
-
-func longestCommonPrefixBinarySearch(strs []string) string {
   if len(strs) == 0 || len(strs[0]) == 0 {
     return ""
   }
@@ -78,7 +44,8 @@ func isCommonPrefix(strs []string, l int) bool {
   return true
 }
 
-
+// T: O(n)
+// M: O(1)
 func longestCommonPrefixDivideAndConquer(strs []string) string {
   if len(strs) == 0 || len(strs[0]) == 0 {
     return ""
@@ -111,6 +78,8 @@ func DivideAndConquer(strs []string, l, r int) string {
   return lcpLeft[0:count]
 }
 
+// T: O(n)
+// M: O(1)
 func longestCommonPrefixVerticalScanning(strs []string) string {
   if len(strs) == 0 {
     return ""
@@ -129,6 +98,8 @@ func longestCommonPrefixVerticalScanning(strs []string) string {
   return str[0:count]
 }
 
+// T: O(n)
+// M: O(1)
 func longestCommonPrefixHorizontalScanning(strs []string) string {
   if len(strs) == 0 {
     return ""

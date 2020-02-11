@@ -1,38 +1,5 @@
 package main
-import "fmt"
 import "strings"
-
-func main() {
-  h, n, o := "hello", "ll", 2
-  fmt.Printf("Input:  %s, %s\n", h, n)
-  fmt.Printf("Output: %d\n", strStr(h, n))
-  fmt.Printf("Expect: %d\n", o)
-
-  h, n, o = "aaaaa", "bba", -1
-  fmt.Printf("Input:  %s, %s\n", h, n)
-  fmt.Printf("Output: %d\n", strStr(h, n))
-  fmt.Printf("Expect: %d\n", o)
-
-  h, n, o = "", "", 0
-  fmt.Printf("Input:  %s, %s\n", h, n)
-  fmt.Printf("Output: %d\n", strStr(h, n))
-  fmt.Printf("Expect: %d\n", o)
-
-  h, n, o = "", "a", -1
-  fmt.Printf("Input:  %s, %s\n", h, n)
-  fmt.Printf("Output: %d\n", strStr(h, n))
-  fmt.Printf("Expect: %d\n", o)
-
-  h, n, o = "a", "a", 0
-  fmt.Printf("Input:  %s, %s\n", h, n)
-  fmt.Printf("Output: %d\n", strStr(h, n))
-  fmt.Printf("Expect: %d\n", o)
-
-  h, n, o = "abababcabaa", "ababc", 2
-  fmt.Printf("Input:  %s, %s\n", h, n)
-  fmt.Printf("Output: %d\n", strStr(h, n))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // leetcode 459. 796.
 // T: O(n + k)

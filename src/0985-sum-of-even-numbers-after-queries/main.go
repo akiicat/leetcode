@@ -1,12 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, queries, o := []int{1,2,3,4}, [][]int{[]int{1,0},[]int{-3,1},[]int{-4,0},[]int{2,3}}, []int{8,6,2,4}
-  fmt.Printf("Input:  %v, %v, %v\n", i, queries, o)
-  fmt.Printf("Output: %d\n", sumEvenAfterQueries(i, queries))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n + q)
 // M: O(q)

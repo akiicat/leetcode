@@ -1,12 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := "abccccdd", 7
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", longestPalindrome(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(1)

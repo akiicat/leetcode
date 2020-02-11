@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  image, sr, sc, newColor, o := [][]int{[]int{1,1,1}, []int{1,1,0}, []int{1,0,1}}, 1, 1, 2, [][]int{[]int{2,2,2}, []int{2,2,0}, []int{2,0,1}}
-  fmt.Printf("Input:  %v, %d, %d, %d\n", image, sr, sc, newColor)
-  fmt.Printf("Output: %v\n", floodFill(image, sr, sc, newColor))
-  fmt.Printf("Expect: %v\n", o)
-
-  image, sr, sc, newColor, o = [][]int{[]int{0,0,0}, []int{0,1,1}}, 1, 1, 1, [][]int{[]int{0,0,0}, []int{0,1,1}}
-  fmt.Printf("Input:  %v, %d, %d, %d\n", image, sr, sc, newColor)
-  fmt.Printf("Output: %v\n", floodFill(image, sr, sc, newColor))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n) n is the number of pixels
 // M: O(n)

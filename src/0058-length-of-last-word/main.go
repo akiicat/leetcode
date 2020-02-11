@@ -1,32 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := "Hello World", 5
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", lengthOfLastWord(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "Hello ", 5
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", lengthOfLastWord(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "  ", 0
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", lengthOfLastWord(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = " ", 0
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", lengthOfLastWord(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "", 0
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", lengthOfLastWord(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(1)

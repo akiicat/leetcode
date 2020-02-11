@@ -1,12 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  m, n, ops, o := 3, 3, [][]int{[]int{2,2}, []int{3,3}}, 4
-  fmt.Printf("Input:  %d %d %v\n", m, n, ops)
-  fmt.Printf("Output: %d\n", maxCount(m, n, ops))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n) n for the number of operations
 // M: O(1)

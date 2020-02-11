@@ -1,28 +1,5 @@
 package main
-import "fmt"
 import "sort"
-
-func main() {
-  i, o := []string{"w","wo","wor","worl", "world"}, "world"
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %s\n", longestWord(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = []string{"a", "banana", "app", "appl", "ap", "apply", "apple"}, "apple"
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %s\n", longestWord(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = []string{"a", "b", "cc"}, "a"
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %s\n", longestWord(i))
-  fmt.Printf("Expect: %s\n", o)
-
-  i, o = []string{"w","wo","wox","worl", "world"}, "world"
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %s\n", longestWord(i))
-  fmt.Printf("Expect: %s\n", o)
-}
 
 // https://leetcode.com/articles/longest-word-in-dictionary/
 // T: O(n) 

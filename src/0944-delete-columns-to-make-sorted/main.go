@@ -1,22 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []string{"cba","daf","ghi"}, 1
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", minDeletionSize(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []string{"a", "b"}, 0
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", minDeletionSize(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = []string{"zyx","wvu","tsr"}, 3
-  fmt.Printf("Input:  %v\n", i)
-  fmt.Printf("Output: %d\n", minDeletionSize(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n) n is the total element of A
 // M: O(1)

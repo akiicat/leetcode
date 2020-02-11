@@ -1,23 +1,4 @@
 package main
-import "fmt"
-
-// type TreeNode struct {
-//     Val int
-//     Left *TreeNode
-//     Right *TreeNode
-// }
-
-func main() {
-  i, o := 19, true
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", isHappy(i))
-  fmt.Printf("Expect: %t\n", o)
-
-  i, o = 2, false
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %t\n", isHappy(i))
-  fmt.Printf("Expect: %t\n", o)
-}
 
 // T: O(log(n))
 // M: O(log(n))

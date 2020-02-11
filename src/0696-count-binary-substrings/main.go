@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := "00110011", 6
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", countBinarySubstrings(i))
-  fmt.Printf("Expect: %d\n", o)
-
-  i, o = "10101", 4
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", countBinarySubstrings(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n)
 // M: O(1)

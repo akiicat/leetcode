@@ -1,12 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  i, o := []string{"gin", "zen", "gig", "msg"}, 2
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %d\n", uniqueMorseRepresentations(i))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n * l)
 // M: O(n * l)

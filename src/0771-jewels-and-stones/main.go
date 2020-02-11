@@ -1,17 +1,4 @@
 package main
-import "fmt"
-
-func main() {
-  j, s, o := "aA", "aAAbbbb", 3
-  fmt.Printf("Input:  J=%s, S=%s\n", j, s)
-  fmt.Printf("Output: %d\n", numJewelsInStones(j, s))
-  fmt.Printf("Expect: %d\n", o)
-
-  j, s, o = "z", "ZZ", 0
-  fmt.Printf("Input:  J=%s, S=%s\n", j, s)
-  fmt.Printf("Output: %d\n", numJewelsInStones(j, s))
-  fmt.Printf("Expect: %d\n", o)
-}
 
 // T: O(n + m)
 // M: O(n)

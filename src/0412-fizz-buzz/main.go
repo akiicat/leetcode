@@ -2,28 +2,6 @@ package main
 import "fmt"
 import "strconv"
 
-func main() {
-  i, o := 15, []string{
-    "1",
-    "2",
-    "Fizz",
-    "4",
-    "Buzz",
-    "Fizz",
-    "7",
-    "8",
-    "Fizz",
-    "Buzz",
-    "11",
-    "Fizz",
-    "13",
-    "14",
-    "FizzBuzz"}
-  fmt.Printf("Input:  %d\n", i)
-  fmt.Printf("Output: %v\n", fizzBuzz(i))
-  fmt.Printf("Expect: %v\n", o)
-}
-
 // T: O(n)
 // M: O(1)
 // -- start --

@@ -1,24 +1,6 @@
 package main
-import "fmt"
 import "math"
 import "unicode"
-
-func main() {
-  i, o := "a1b2", []string{"a1b2", "a1B2", "A1b2", "A1B2"}
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %v\n", letterCasePermutation(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = "3z4", []string{"3z4", "3Z4"}
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %v\n", letterCasePermutation(i))
-  fmt.Printf("Expect: %v\n", o)
-
-  i, o = "12345", []string{"12345"}
-  fmt.Printf("Input:  %s\n", i)
-  fmt.Printf("Output: %v\n", letterCasePermutation(i))
-  fmt.Printf("Expect: %v\n", o)
-}
 
 // T: O(n * 2^n)
 // M: O(1)
