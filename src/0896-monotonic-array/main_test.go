@@ -2,7 +2,7 @@ package main
 import "testing"
 import . "main/pkg/testing_helper"
 
-func TestReverseStr(_t *testing.T) {
+func TestIsMonotonic(_t *testing.T) {
   i, o := []int{1,2,2,3}, true
   T(_t, S(i), S(isMonotonic(i)), S(o))
 

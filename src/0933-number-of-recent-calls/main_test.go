@@ -4,7 +4,7 @@ import . "main/pkg/testing_helper"
 import "fmt"
 import "strconv"
 
-func TestMinStack(_t *testing.T) {
+func TestRecentCounter(_t *testing.T) {
   i1 := []string{"RecentCounter","ping","ping","ping","ping"}
   i2 := [][]int{[]int{},[]int{1},[]int{100},[]int{3001},[]int{3002}}
   o := []string{"null","1","2","3","3"}

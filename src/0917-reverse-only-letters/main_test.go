@@ -2,7 +2,7 @@ package main
 import "testing"
 import . "main/pkg/testing_helper"
 
-func TestReverseStr(_t *testing.T) {
+func TestReverseOnlyLetters(_t *testing.T) {
   i, o := "ab-cd", "dc-ba"
   T(_t, S(i), S(reverseOnlyLetters(i)), S(o))
 
