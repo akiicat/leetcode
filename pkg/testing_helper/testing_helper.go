@@ -78,8 +78,16 @@ func T(t *testing.T, i, r, o *Value) {
   }
 }
 
-func SortStr(strs []string) []string {
-  sort.Strings(strs)
-  return strs
+func Sort(i interface{}) interface{} {
+  switch v := i.(type) {
+  case []string:
+    sort.Strings(v)
+    return v
+  case []int:
+    sort.Ints(v)
+    return v
+  default:
+    return fmt.Errorf("Sort: failed at type %T", v)
+  }
 }
 
