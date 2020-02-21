@@ -1,5 +1,8 @@
 package main
 
+// leetcode 50. pow x n
+// leetcode 326. power of three
+// leetcode 342. power of four
 // T: O(1)
 // M: O(1)
 // -- start --

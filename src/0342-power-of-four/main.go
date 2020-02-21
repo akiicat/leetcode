@@ -2,6 +2,9 @@ package main
 import "math"
 import "strconv"
 
+// leetcode 50. pow x n
+// leetcode 231. power of two
+// leetcode 326. power of three
 // T: O(1)
 // M: O(1)
 // -- start --

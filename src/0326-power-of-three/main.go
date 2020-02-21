@@ -1,6 +1,9 @@
 package main
 import "math"
 
+// leetcode 50. pow x n
+// leetcode 231. power of two
+// leetcode 342. power of four
 // T: O(1)
 // M: O(1)
 // -- start --
