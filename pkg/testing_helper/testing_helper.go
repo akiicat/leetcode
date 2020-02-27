@@ -42,6 +42,8 @@ func S(i ...interface{}) *Value {
     return &Value{Val: fmt.Sprintf("%d", v)}
   case uint32:
     return &Value{Val: fmt.Sprintf("%d(%032b)", v, v)}
+  case [][]byte: // [][]uint8
+    return &Value{Val: fmt.Sprintf("%s", v)}
   case []byte: // []uint8
     return &Value{Val: fmt.Sprintf("%s", v)}
   case byte: // uint8
