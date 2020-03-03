@@ -52,6 +52,8 @@ func S(i ...interface{}) *Value {
     return &Value{Val: fmt.Sprintf("%v", v)}
   case float64:
     return &Value{Val: fmt.Sprintf("%f", v)}
+  case []bool:
+    return &Value{Val: fmt.Sprintf("%t", v)}
   case bool:
     return &Value{Val: fmt.Sprintf("%t", v)}
   case *ListNode:
