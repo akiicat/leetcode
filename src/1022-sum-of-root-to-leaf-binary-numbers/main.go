@@ -12,24 +12,20 @@ import . "main/pkg/tree_node"
 // -- start --
 
 func sumRootToLeaf(root *TreeNode) int {
-  s, sum := 0, 0
-  R(root, s, &sum)
-  return sum
+  return R(root, 0)
 }
 
-func R(root *TreeNode, s int, sum *int) {
+func R(root *TreeNode, s int) int {
   if root == nil {
     return
   }
 
   s = s << 1 | root.Val
   if root.Left == nil && root.Right == nil {
-    *sum += s
-    return
+    return s
   }
 
-  R(root.Left, s, sum)
-  R(root.Right, s, sum)
+  return R(root.Left, s, sum) + R(root.Right, s, sum)
 }
 
 // -- end --
