@@ -1,0 +1,13 @@
+package main
+
+// T: O(1)
+// M: O(1)
+// -- start --
+
+func isBoomerang(points [][]int) bool {
+  p0, p1, p2 := points[0], points[1], points[2]
+  return (p2[0] - p1[0]) * (p1[1] - p0[1]) != (p2[1] - p1[1]) * (p1[0] - p0[0])
+}
+
+// -- end --
+
