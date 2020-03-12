@@ -29,30 +29,5 @@ func gardenNoAdj(N int, paths [][]int) []int {
   return rtn
 }
 
-// T: O(n)
-// M: O(1)
-func gardenNoAdjLoop(N int, paths [][]int) []int {
-  rtn := make([]int, N)
-
-  for i, _ := range rtn {
-    rtn[i] = 1
-  }
-
-  for i := 0; i < N; i++ {
-    for _, v := range paths {
-      a, b := v[0]-1, v[1]-1
-      if a > b {
-        a, b = b, a
-      }
-
-      if rtn[a] == rtn[b] {
-        rtn[b]++
-      }
-    }
-  }
-
-  return rtn
-}
-
 // -- end --
 
