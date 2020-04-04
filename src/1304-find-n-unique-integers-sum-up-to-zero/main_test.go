@@ -2,7 +2,7 @@ package main
 import "testing"
 import . "main/pkg/testing_helper"
 
-func TestReplaceElements(t *testing.T) {
+func TestSumZero(t *testing.T) {
   i, o := 5, 0
   r := sumZero(i)
   T(t, S(i), S(len(r) + sum(r)), S(i + o))

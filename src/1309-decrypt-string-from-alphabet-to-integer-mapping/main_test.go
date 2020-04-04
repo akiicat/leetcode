@@ -2,7 +2,7 @@ package main
 import "testing"
 import . "main/pkg/testing_helper"
 
-func TestGetDecimalValue(_t *testing.T) {
+func TestFreqAlphabets(_t *testing.T) {
   i, o := "10#11#12", "jkab"
   T(_t, S(i), S(freqAlphabets(i)), S(o))
 

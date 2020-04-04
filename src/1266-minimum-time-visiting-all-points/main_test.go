@@ -2,7 +2,7 @@ package main
 import "testing"
 import . "main/pkg/testing_helper"
 
-func TestCheckStraightLine(t *testing.T) {
+func TestMinTimeToVisitAllPoints(t *testing.T) {
   i, o := [][]int{[]int{1,1}, []int{3,4}, []int{-1,0}}, 7
   T(t, S(i), S(minTimeToVisitAllPoints(i)), S(o))
 
