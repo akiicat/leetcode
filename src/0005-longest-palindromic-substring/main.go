@@ -1,5 +1,4 @@
 package main
-import "log"
 
 // T: O(n)
 // M: O(n)
