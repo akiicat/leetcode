@@ -4,6 +4,7 @@ package main
 // M: O(n)
 // -- start --
 
+// leetcode 647.
 // Manacher's Algorithm
 // https://www.hackerrank.com/topics/manachers-algorithm
 // T: O(n)
