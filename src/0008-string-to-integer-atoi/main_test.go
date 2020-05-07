@@ -2,7 +2,7 @@ package main
 import "testing"
 import . "main/pkg/testing_helper"
 
-func TestCompress(_t *testing.T) {
+func TestMyAtoi(_t *testing.T) {
   i, o := "42", 42
   T(_t, S(i), S(myAtoi(i)), S(o))
 
