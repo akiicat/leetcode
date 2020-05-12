@@ -5,6 +5,7 @@ import "sort"
 import "testing"
 import . "main/pkg/list_node"
 import . "main/pkg/tree_node"
+import . "main/pkg/nested_integer"
 
 type Value struct {
   Val string
@@ -59,6 +60,8 @@ func S(i ...interface{}) *Value {
   case *ListNode:
     return &Value{Val: fmt.Sprintf("%s", v.ToStr())}
   case *TreeNode:
+    return &Value{Val: fmt.Sprintf("%s", v.ToStr())}
+  case *NestedInteger:
     return &Value{Val: fmt.Sprintf("%s", v.ToStr())}
   default:
     return &Value{Err: fmt.Errorf("failed at type %T", v)}
