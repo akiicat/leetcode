@@ -33,6 +33,10 @@ import "strconv"
 func deserialize(s string) *NestedInteger {
   res := &NestedInteger{}
 
+  if len(s) == 0 || (s[0] == '[' && s[1] == ']') {
+    return res
+  }
+
   if s[0] != '[' {
     v, _ := strconv.Atoi(s)
     res.SetInteger(v)

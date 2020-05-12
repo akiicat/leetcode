@@ -9,5 +9,8 @@ func TestReverseBetween(t *testing.T) {
 
   i, o = "324", NewNestedInteger("324")
   T(t, S(i), S(deserialize(i)), S(o))
+
+  i, o = "[]", NewNestedInteger("[]")
+  T(t, S(i), S(deserialize(i)), S(o))
 }
 
