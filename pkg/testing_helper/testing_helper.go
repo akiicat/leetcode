@@ -93,6 +93,21 @@ func Sort(i interface{}) interface{} {
   case []int:
     sort.Ints(v)
     return v
+  case [][]int:
+    sort.Slice(v[:], func(i, j int) bool {
+      if len(v[i]) != len(v[j]) {
+        return len(v[i]) < len(v[j])
+      }
+
+      for x := range v[i] {
+        if v[i][x] != v[j][x] {
+          return v[i][x] < v[j][x]
+        }
+      }
+
+      return false
+    })
+    return v
   default:
     return fmt.Errorf("Sort: failed at type %T", v)
   }
