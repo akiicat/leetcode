@@ -114,7 +114,7 @@ func strStrBruteForce(haystack string, needle string) int {
 }
 
 // T: O(n + k)
-// M: O(n)
+// M: O(1)
 func strStrLibrary(haystack string, needle string) int {
   return strings.Index(haystack, needle)
 }
