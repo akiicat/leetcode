@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestRemoveDuplicates(_t *testing.T) {
+func TestDivide(_t *testing.T) {
 	i1, i2, o := 10, 3, 3
 	T(_t, S(i1, i2), S(divide(i1, i2)), S(o))
 

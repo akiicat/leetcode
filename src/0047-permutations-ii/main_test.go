@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestFourSum(_t *testing.T) {
+func TestPermuteUnique(_t *testing.T) {
 	i, o := []int{1, 1, 2}, [][]int{
 		[]int{1, 1, 2},
 		[]int{1, 2, 1},
