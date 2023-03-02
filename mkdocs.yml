@@ -1,0 +1,163 @@
+site_name: Leetcode
+site_description: 
+site_author: Akiicat
+site_url: https://example.com
+
+markdown_extensions:
+  # - admonition
+  # - footnotes
+  - attr_list
+  - def_list
+  - meta
+
+  # Admonitions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  # Annotations
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
+  # Button
+  - attr_list
+
+  # Code blocks
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+  # Content tabs
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+
+  # Data tables
+  - tables      
+  
+  # Diagrams
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  # Footnotes
+  - footnotes
+
+  # Formatting
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  # Grids
+  - attr_list
+  - md_in_html
+
+  # Icons, Emojis
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  # Images
+  - attr_list
+  - md_in_html
+
+  # Lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  # Tooltips
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+
+theme:
+  # direction: ltr
+  # language: zh-TW
+  name: material
+  icon:
+    logo: material/library
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: white
+      accent: deep orange
+      scheme: white
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: orange
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    # - navigation.indexes
+    - toc.follow
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    
+plugins:
+  - search
+  # - social
+  # - blog
+  - tags:
+      tags_file: tags.md
+
+extra:
+  # header logo url
+  homepage: https://example.com
+# consent:
+#   title: Cookie consent
+#   description: >-
+#     We use cookies to recognize your repeated visits and preferences, as well
+#     as to measure the effectiveness of our documentation and whether users
+#     find what they're searching for. With your consent, you're helping us to
+#     make our documentation better.
+# analytics:
+#   provider: google
+#   property: UA-XXXXXXXX-X
+#   feedback:
+#     title: Was this page helpful?
+#     ratings:
+#       - icon: material/emoticon-happy-outline
+#         name: This page was helpful
+#         data: 1
+#         note: >-
+#           Thanks for your feedback!
+#       - icon: material/emoticon-sad-outline
+#         name: This page could be improved
+#         data: 0
+#         note: >-
+#           Thanks for your feedback! Help us improve this page by
+#           using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+
+copyright: >
+  Copyright &copy; 2023 - 2023 Aki –
+  <a href="#__consent">Change cookie settings</a>
+
