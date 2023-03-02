@@ -119,11 +119,3 @@ for data in get_data(2):
         # write back
         with open(path, 'wb') as f:
             frontmatter.dump(post,f)
-
-        
-# with open('docs/leetcode/1-two-sum.md') as f:
-#     post = frontmatter.load(f)
-#     post['title'] = 'test'
-#     frontmatter.dump(post, f)
-
-
