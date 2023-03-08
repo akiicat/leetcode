@@ -9,19 +9,19 @@ def get_data(total = -1):
 
     # Create the query string and variables required for the request.
     query = """
-        query problemsetQuestionList($categorySlug: String, $limit: Int, $skip: Int, $filters: QuestionListFilterInput) {
+        query problemsetQuestionList(categorySlug: String, limit: Int, skip: Int, filters: QuestionListFilterInput) {
           problemsetQuestionList: questionList(
-            categorySlug: $categorySlug
-            limit: $limit
-            skip: $skip
-            filters: $filters
+            categorySlug: categorySlug
+            limit: limit
+            skip: skip
+            filters: filters
           ) {
             total: totalNum
             questions: data {
               acRate
               difficulty
               questionFrontendId
-              isPaidOnly
+              isPaidO()nly
               title
               titleSlug
               topicTags {
@@ -72,14 +72,14 @@ def get_data(total = -1):
     return res
     # return data['data']['problemsetQuestionList']['questions']
 
-# data = get_data()
+# data = get_data
 # print(len(data))
 # print(data[0])
 # {
 # 'acRate': 49.528488184612684,
 # 'difficulty': 'Easy',
 # 'questionFrontendId': '1',
-# 'isPaidOnly': False,
+# 'isPaidO()nly': False,
 # 'title': 'Two Sum',
 # 'titleSlug': 'two-sum',
 # 'topicTags': [
