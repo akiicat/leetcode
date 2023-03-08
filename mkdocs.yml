@@ -3,6 +3,9 @@ site_description:
 site_author: Akiicat
 site_url: https://example.com
 
+hooks:
+    - sort.py
+
 markdown_extensions:
   # - admonition
   # - footnotes
@@ -127,6 +130,7 @@ plugins:
   # - blog
   - tags:
       tags_file: tags.md
+  # - awesome-pages
 
 extra:
   # header logo url

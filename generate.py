@@ -100,7 +100,7 @@ default_content = """
     ```
 """
 
-for data in get_data(2):
+for data in get_data():
 
     path = "docs/leetcode/{}-{}.md".format(data['questionFrontendId'], data['titleSlug'])
 

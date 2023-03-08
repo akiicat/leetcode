@@ -1,2 +1,4 @@
 python-graphql-client==0.4.3
 python-frontmatter==1.0.0
+mkdocs-awesome-pages-plugin==2.8.0
+natsort==8.3.1
