@@ -4,7 +4,6 @@ tags:
 - Backtracking
 - Bit Manipulation
 - Matrix
-- Unsolved
 ---
 
 
@@ -12,9 +11,9 @@ tags:
 
 === "C++"
 
-    **Time:** O()
+    **Time:** $O(N^2)$
 
-    **Space:** O()
+    **Space:** $O(N^2)$
 
     ``` c++
     ```

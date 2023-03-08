@@ -92,9 +92,9 @@ default_content = """
 
 === "C++"
 
-    **Time:** O()
+    **Time:** $O()$
 
-    **Space:** O()
+    **Space:** $O()$
 
     ``` c++
     ```
