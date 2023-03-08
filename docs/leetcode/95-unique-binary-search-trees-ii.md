@@ -13,9 +13,9 @@ tags:
 
 === "C++"
 
-    **Time:** $O()$
+    $Time: O()$
 
-    **Space:** $O()$
+    $Space: O()$
 
     ``` c++
     ```

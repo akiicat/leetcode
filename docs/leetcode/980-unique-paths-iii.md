@@ -11,9 +11,9 @@ tags:
 
 === "C++"
 
-    **Time:** $O(N^2)$
+    $Time: O(N^2)$
 
-    **Space:** $O(N^2)$
+    $Space: O(N^2)$
 
     ``` c++
     typedef pair<int,int> pii;
