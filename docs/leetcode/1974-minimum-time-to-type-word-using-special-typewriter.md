@@ -29,3 +29,25 @@ tags:
         }
     };
     ```
+=== "C++"
+
+    $Time: O(N)$
+
+    $Space: O(1)$
+
+    ``` c++
+    class Solution {
+    public:
+        int minTimeToType(string word) {
+            int point = 'a';
+            int count = 0;
+
+            for (auto ch : word) {
+                count += min(abs(point-ch), 26 - abs(point-ch)) + 1;
+                point = ch;
+            }
+
+            return count;
+        }
+    };
+    ```
