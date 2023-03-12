@@ -13,7 +13,7 @@ tags:
 
     $Space: O(1)$
 
-    ``` c++
+    ```c++
     class Solution {
     public:
         int minTimeToType(string word) {
@@ -35,7 +35,7 @@ tags:
 
     $Space: O(1)$
 
-    ``` c++
+    ```c++
     class Solution {
     public:
         int minTimeToType(string word) {

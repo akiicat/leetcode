@@ -15,7 +15,7 @@ tags:
 
     $Space: O(N^2)$
 
-    ``` c++
+    ```c++
     typedef pair<int,int> pii;
 
     class Solution {

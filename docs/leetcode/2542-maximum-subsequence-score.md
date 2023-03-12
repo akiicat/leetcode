@@ -15,7 +15,7 @@ tags:
 
     $Space: O(N)$
 
-    ``` c++
+    ```c++
     class Solution {
     public:
         long long maxScore(vector<int>& speed, vector<int>& efficiency, int k) {

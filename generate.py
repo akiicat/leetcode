@@ -96,7 +96,7 @@ default_content = """
 
     $Space: O()$
 
-    ``` c++
+    ```c++
     ```
 """
 
