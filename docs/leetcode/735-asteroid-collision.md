@@ -22,10 +22,10 @@ tags:
 
             for (int i = 0; i < asteroids.size(); i++) {
                 int &a = asteroids[i];
-                if (res.empty() || *res.rbegin() < 0 || a > 0) {
+                if (res.empty() || res.back() < 0 || a > 0) {
                     res.push_back(a);
-                } else if (*res.rbegin() <= -a) {
-                    if (*res.rbegin() < -a) i--;
+                } else if (res.back() <= -a) {
+                    if (res.back() < -a) i--;
                     res.pop_back();
                 }
             }
